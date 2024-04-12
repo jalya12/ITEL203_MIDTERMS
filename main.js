@@ -1,7 +1,7 @@
 const menuIcon = document.querySelector(".menu-icon");
-const navList = document.querySelector("ul");
+const navLinks = document.querySelector(".nav-links"); // Corrected selector
 
-menuIcon.addEventListener('click', () =>{
+menuIcon.addEventListener('click', () => {
     menuIcon.classList.toggle("active");
-    navList.classList.toggle("active");
-})
+    navLinks.classList.toggle("active"); // Apply active class to nav-links
+});
