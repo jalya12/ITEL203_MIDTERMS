@@ -1,7 +1,8 @@
-const menuIcon = document.querySelector(".menu-icon");
-const navLinks = document.querySelector(".nav-links"); // Corrected selector
+// Corrected selector to target the ".nav-links" element
+const navLinks = document.querySelector(".nav-links");
 
+// Toggle visibility of navigation links
 menuIcon.addEventListener('click', () => {
     menuIcon.classList.toggle("active");
-    navLinks.classList.toggle("active"); // Apply active class to nav-links
+    navLinks.classList.toggle("active");
 });
