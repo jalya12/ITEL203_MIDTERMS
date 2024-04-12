@@ -163,16 +163,10 @@ footer {
         display: block; /* Show dropdown menu on smaller screens */
     }
     .search-bar input[type="text"] {
-        width: 120px; /* Adjust search input width */
+        width: 50px; /* Adjust search input width */
     }
     .search-bar button {
-        padding: 6px; /* Adjust padding for search button */
+        padding: 4px; /* Adjust padding for search button */
     }
 }
 
-/* For screens larger than 768px */
-@media only screen and (min-width: 769px) {
-    .dropdown {
-        display: none; /* Hide dropdown menu on larger screens */
-    }
-}
