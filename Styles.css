@@ -69,8 +69,13 @@ nav {
     position: relative;
 }
 
+/* Dropdown menu styles */
+.dropdown {
+    position: relative;
+}
+
 .dropdown-content {
-    display: none;
+    display: block; /* Show dropdown content by default */
     position: absolute;
     background-color: #535945; /* Change background color */
     min-width: 160px;
