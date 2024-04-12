@@ -10,9 +10,9 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background-image: url('eBook.gif');
-    background-size: cover; /* Cover the entire body */
-    background-repeat: no-repeat; /* Prevent repeating */
-    background-position: center; /* Center the background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* Navigation Bar styles */
@@ -33,140 +33,93 @@ nav {
 }
 
 .nav-links {
-    background-color: #535945;
     list-style-type: none;
-    display: flex;
     font-size: medium;
 }
 
 .nav-links li {
+    display: inline; /* Display navigation links horizontally */
     margin-right: 20px;
 }
 
 .nav-links a {
     color: #fff;
     text-decoration: none;
-    position: relative; /* Set position to relative for the link */
+    position: relative;
 }
 
 .nav-links a::after {
     content: '';
     display: block;
     width: 0;
-    height: 2px; /* Adjust the height of the underline */
+    height: 2px;
     background-color: #fff;
     position: absolute;
-    bottom: -5px; /* Adjust the distance of the underline from the text */
+    bottom: -5px;
     left: 0;
-    transition: width 0.3s ease; /* Add transition effect */
+    transition: width 0.3s ease;
 }
 
 .nav-links a:hover::after {
-    width: 100%; /* Expand the underline on hover */
-}
-
-/* Search box styles */
-.search-box{
-    display: flex;
-    align-items: center; /* Align items vertically */
-    background-color: #f9f9f9;
-    padding: 6px 12px; /* Adjust padding as needed */
-    border-radius: 20px; /* Make the search bar rounded */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a shadow for a raised effect */
-}
-.search-box input{
-    border: 0;
-    background-color: transparent;
-    font-size: 16px;
-    width: 0;
-    transition: 0.8s;
-}
-.search-box:hover input{
-width: 150px;
-}
-.search-box button {
-    padding: 8px; /* Adjusted padding to fit inside the circle */
-    background-color: #333;
-    border: 0;
-    border-radius: 50%; /* Make the button circular */
-    color: #fff;
-    cursor: pointer;
-    font-size: 16px; /* Increased font size to make the icon visible */
-}
-
-/* Main Content styles */
-.main-content {
-    text-align: center;
-    margin: 200px auto;
-}
-
-/* Footer styles */
-footer {
-    background-color: #535945;
-    color: #fff;
-    text-align: center;
-    padding: 2px 0;
-    position: fixed;
-    bottom: 0;
     width: 100%;
 }
 
 /* Dropdown menu styles */
 .dropdown {
     position: relative;
-    display: inline-block;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: transparent; /* Set the background color to transparent */
+    background-color: #535945; /* Change background color */
     min-width: 160px;
     z-index: 1;
 }
 
 .dropdown-content a {
-    color: black;
+    color: #fff; /* Change text color */
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    position: relative; /* Set position to relative for the link */
 }
 
-/* Style the underline */
-.dropdown-content a::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px; /* Adjust the height of the underline */
-    background-color: #000; /* Change the color to match the underline color of navigation links */
-    position: absolute;
-    bottom: -5px; /* Adjust the distance of the underline from the text */
-    left: 0;
-    transition: width 0.3s ease; /* Add transition effect */
-}
-
-.dropdown-content a:hover::after,
-.dropdown-content a:focus::after {
-    width: 100%; /* Expand the underline on hover or focus */
+.dropdown-content a:hover {
+    background-color: #333; /* Change background color on hover */
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-@media only screen and (max-width: 768px) {
-    .nav-links {
-        display: none; /* Hide navigation links */
-    }
-    .dropdown {
-        display: block; /* Show dropdown menu on smaller screens */
-    }
-    .search-bar input[type="text"] {
-        width: 50px; /* Adjust search input width */
-    }
-    .search-bar button {
-        padding: 4px; /* Adjust padding for search button */
-    }
+/* Search box styles */
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 6px 12px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.search-box input[type="text"] {
+    border: 0;
+    background-color: transparent;
+    font-size: 16px;
+    width: 0;
+    transition: 0.8s;
+}
+
+.search-box:hover input[type="text"] {
+    width: 150px;
+}
+
+.search-box button {
+    padding: 8px;
+    background-color: #333;
+    border: 0;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
