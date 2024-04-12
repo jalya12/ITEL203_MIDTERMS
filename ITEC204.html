@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITEC204</title>
+    <link rel="website icon" type="jpg" href="icon.jpg">
+    <link rel="stylesheet" href="ITEC204.css">
+</head>
+<body>
+  <!--Header-->
+  <div id="header">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="Homepage.html">Home</a>
+        <a href="home.html">Reviewer</a>
+        <a href="About.html">About Us</a>
+        <a href="Contact.html">Contact</a>
+    </div>
+    <span onclick="openNav()">&#9776; ITEC204</span>
+    <script src="Navigation.js"></script>
+</div>
+  <!--Contents-->
+  <div id = "content">
+      <h1 style="text-align: center;">Data Structure and Alogrithm</h1>
+    <div id = "P1ITEC204">
+        <h1 style="text-align: center;"> <b>Part 1</b></h1>
+        <p>
+            <b>Variable</b><br>
+            A symbol or name that stands for a value.<br>
+            A variable is a value that can change.<br>
+            Variables provide temporary storage for information that will be needed during the lifespan of the computer program (or application).<br>
+            Example: <i>z = x + y</i><br>
+            This is an example of programming expression.<br>
+            x, y, and z are variables.<br>
+            Variables can represent numeric values, characters, or character strings.<br>
+            In a program, every variable has:<br>
+            <b>Name (Identifier)</b><br>
+            <b>Data Type</b><br>
+            <b>Size</b><br>
+            <b>Value</b><br><br>
+
+            <b>Data types</b><br>
+            A data type specifies the size and type of variable values. It is important to use the correct data type for the corresponding variable; to avoid errors, to save time and memory, but it will also make your code more maintainable and readable.<br>
+            <b>Data Types</b><br>
+            - <b>System-defined data types (also called Primitive data types)</b><br>
+            - <b>User-defined data types</b><br><br>
+
+            <b>System-defined data types</b><br>
+            Data types that are defined by the system.<br>
+            The primitive data types provided by many programming languages are: <i>int</i>, <i>float</i>, <i>char</i>, <i>double</i>, <i>bool</i>, etc.<br>
+            The number of bits allocated for each primitive data type depends on the programming languages, the compiler and the operating system.<br><br>
+
+            <b>User-defined data types</b><br>
+            If the system-defined data types are not enough, then most programming languages allow the users to define their own data types (e.g., structures in C/C++ and classes in Java).<br><br>
+
+            <b>Data Structures</b><br>
+            A particular way of storing and organizing data in a computer so that it can be used efficiently.<br>
+            A special format for organizing and storing data<br><br>
+
+            <b>Classification of Data Structures</b><br>
+            - <b>Linear data structures:</b><br>
+            A linear data structure is a structure in which the elements are stored sequentially, and the elements are connected to the previous and the next element. As the elements are stored sequentially, they can be traversed or accessed in a single run. The implementation of linear data structures is easier as the elements are sequentially organized in memory. The data elements in an array are traversed one after another and can access only one element at a time.<br>
+            Examples: Array, Queue, Stack, Linked List<br>
+            
+            - <b>Non-linear data structures:</b><br>
+            A non-linear data structure is also another type of data structure in which the data elements are not arranged in a contiguous manner. As the arrangement is non-sequential, the data elements cannot be traversed or accessed in a single run. In the case of a linear data structure, an element is connected to two elements (previous and the next element), whereas, in the non-linear data structure, an element can be connected to more than two elements.<br>
+            Examples: Trees and Graphs<br><br>
+
+            <b>Differences between the Linear data structure and non-linear data structure.</b><br>
+            <table>
+            <tr>
+                <td><b>Linear Data structure</b></td>
+                <td><b>Non-Linear Data structure</b></td>
+            </tr>
+            <tr>
+                <td>Basic</td>
+                <td>Linear Data structure- In this structure, the elements are arranged sequentially or linearly and attached to one another.<br>
+                    Non-Linear Data structure- In this structure, the elements are arranged hierarchically or non-linear manner.</td>
+            </tr>
+            <tr>
+                <td>Types</td>
+                <td>Linear Data structure- Arrays, linked list, stack, queue are the types of a linear data structure.<br>
+                    Non-Linear Data structure- Trees and graphs are the types of a non-linear data structure.</td>
+            </tr>
+            <tr>
+                <td>Implementation</td>
+                <td>Linear Data structure- Due to the linear organization, they are easy to implement.<br>
+                    Non-Linear Data structure- Due to the non-linear organization, they are difficult to implement.</td>
+            </tr>
+            <tr>
+                <td>Traversal</td>
+                <td>Linear Data structure- As linear data structure is a single level, so it requires a single run to traverse each data item.<br>
+                    Non-Linear Data structure-The data items in a non-linear data structure cannot be accessed in a single run. It requires multiple runs to be traversed.</td>
+            </tr>
+            <tr>
+                <td>Arrangement</td>
+                <td>Linear Data structure- Each data item is attached to the previous and next items.<br>
+                    Non-Linear Data structure- Each item is attached to many other items.</td>
+            </tr>
+            <tr>
+                <td>Levels</td>
+                <td>Linear Data structure- This data structure does not contain any hierarchy, and all the data elements are organized in a single level.<br>
+                    Non-Linear Data structure- In this, the data elements are arranged in multiple levels.</td>
+            </tr>
+            <tr>
+                <td>Memory utilization</td>
+                <td>Linear Data structure- In this, the memory utilization is not efficient.<br>
+                    Non-Linear Data structure- In this, memory is utilized in a very efficient manner.</td>
+            </tr>
+            <tr>
+                <td>Time complexity</td>
+                <td>Linear Data structure- The time complexity of linear data structure increases with the increase in the input size.<br>
+                    Non-Linear Data structure- The time complexity of non-linear data structure often remains same with the increase in the input size.</td>
+            </tr>
+            <tr>
+                <td>Applications</td>
+                <td>Linear data structures are mainly used for developing the software.<br>
+                    Non-linear data structures are used in image processing and Artificial Intelligence.</td>
+            </tr>
+            </table><br><br>
+
+            <b>Abstract Data Types (ADT)</b><br>
+            A set of data values and associated operations that are precisely specified independent of any particular implementation.<br>
+            Commonly used ADTs include: Linked Lists, Stacks, Queues, Priority Queues, Binary Trees, Dictionaries etc.<br>
+            For example, stack uses LIFO (Last-In-First-Out) mechanism while storing the data in data structures. The last element inserted into the stack is the first element that gets deleted. Common operations of it are: creating the stack, pushing an element onto the stack, popping an element from stack, finding the current top of the stack, finding number of elements in the stack, etc.<br>
+            Some operations in Queue are the following:<br>
+            - <i>isFull()</i>: This is used to check whether queue is full or not<br>
+            - <i>isEmpty()</i>: This is used to check whether queue is empty or not<br>
+            - <i>insert(x)</i>: This is used to add x into the queue at the rear end<br>
+            - <i>delete()</i>: This is used to delete one element from the front end of the queue<br>
+            - <i>size()</i>: This function is used to get number of elements present into the queue<br><br>
+
+            <b>Algorithms</b><br>
+            A finite set of instructions which, if followed, accomplish a particular task.<br>
+            An algorithm is the step-by-step unambiguous instructions to solve a given problem.<br>
+            Typically, an algorithm takes an input data and produces an output based upon it.<br><br>
+
+            Let us consider the problem of preparing an omelette. To prepare an omelette, we follow the steps given below:<br>
+            Get the frying pan.<br>
+            Get the oil.<br>
+            Do we have oil?<br>
+            If yes, put it in the pan.<br>
+            If no, do we want to buy oil?<br>
+            If yes, then go out and buy.<br>
+            If no, we can terminate.<br>
+            Turn on the stove, etc...<br><br>
+
+            <b>Expressing an Algorithm</b><br>
+            - <i>Natural Language</i>: verbose and ambiguous and are rarely used for complex or technical algorithm (e.g., English or French)<br>
+            - <i>Pseudocode</i>: English-like syntax that resembles a programming language<br>
+            - <i>Flowchart</i>: graphical representation of an algorithm<br>
+            - <i>Programming language</i>: expressing algorithm in a form that can be executed by a computer (e.g., FORTRAN, C, Pascal, Java, PHP, etc.)<br><br>
+
+            <b>Algorithm Criteria</b><br>
+            - Input: there are zero or more quantities which are externally supplied;<br>
+            - Output: at least one quantity is produced;<br>
+            - Definiteness: each instruction must be clear and unambiguous;<br>
+            - Finiteness: if we trace out the instructions of an algorithm, then for all cases the algorithm will terminate after a finite number of steps;<br>
+            - Effectiveness: every instruction must be sufficiently basic that it can in principle be carried out by a person using only pencil and paper. It is not enough that each operation be definite, but it must also be feasible.<br><br>
+
+            <b>Fundamental questions about algorithms</b><br>
+            Given an algorithm to solve a particular problem, we are naturally led to ask:<br>
+            - What is it supposed to do? (Specification)<br>
+            - Does it really do what it is supposed to do? (Verification)<br>
+            - How efficiently does it do it? (Performance Analysis)<br><br>
+
+            <b>Why the Analysis of Algorithms?</b><br>
+            In computer science, multiple algorithms are available for solving the same problem (for example, a sorting problem has many algorithms, like insertion sort, selection sort, quick sort and many more). Algorithm analysis helps us to determine which algorithm is most efficient in terms of time and space consumed.<br><br>
+
+            <b>Goal of the Analysis of Algorithms</b><br>
+            The goal of the analysis of algorithms is to compare algorithms (or solutions) mainly in terms of running time but also in terms of other factors (e.g., memory, developer effort, etc.)<br><br>
+
+            <b>What is Sorting Algorithm?</b><br>
+            Sorting is a process of ordering or placing a list of elements from a collection in some kind of order. It can be done in ascending and descending order. It arranges the data in a sequence which makes searching easier.<br><br>
+
+            Sorting Algorithm is used to reorganize a given array or list elements using a comparison operator.<br><br>
+
+            <b>Main Application of Sorting Algorithm</b><br>
+            - Finding the median of a set of keys<br>
+            - Organizing items by price on a retail website<br>
+            - Determining the order of sites on a search engine<br>
+            - In library, keep the books organized<br>
+            - Arranging numbers in ascending and descending order<br><br>
+
+            <b>Sorting Process</b><br>
+            As humans, we can do this by lining up the items.<br>
+            Computers not like humans can visually compare things two items at once.<br>
+            It uses two steps to execute over and over until data are sorted.<br>
+            - Compare the two items<br>
+            - Swap the two items or copy one item but still; the details are handled in different ways<br><br>
+
+            <b>Main Types of Sorting Algorithm</b><br>
+            - Bubble Sort<br>
+            - Selection Sort<br>
+            - Insertion Sort<br><br>
+
+            <b>Bubble Sort Algorithm</b><br>
+            The simplest in sorting process. This sorting algorithm is comparison-based algorithm in which each pair of adjacent elements is compared and the elements are swapped if they are not in order. This algorithm is not suitable for large data sets as its average and worst-case complexity are of Ο(n2) where n is the number of items.<br><br>
+
+            <b>Selection Sort Algorithm</b><br>
+            Selection sort is a simple sorting algorithm. This sorting algorithm is an in-place comparison-based algorithm in which the list is divided into two parts, the sorted part at the left end and the unsorted part at the right end. Initially, the sorted part is empty and the unsorted part is the entire list.<br>
+            The smallest element is selected from the unsorted array and swapped with the leftmost element, and that element becomes a part of the sorted array. This process continues moving unsorted array boundary by one element to the right.
+            This algorithm is not suitable for large data sets as its average and worst case complexities are of Ο(n2), where n is the number of items.<br><br>
+
+            <b>How Selection Sort Works?</b><br>
+            - Find the minimum value in the list<br>
+            - Swap it with the value in the first position<br>
+            - Repeat the steps for the remainder of the list starting the next position after the swapping to the first position.<br><br>
+
+            <b>Insertion Sort Algorithm</b><br>
+            This is an in-place comparison-based sorting algorithm. Here, a sub-list is maintained which is always sorted. For example, the lower part of an array is maintained to be sorted. An element which is to be inserted in this sorted sub-list, has to find its appropriate place and then it has to be inserted there. Hence the name, insertion sort.
+            The array is searched sequentially and unsorted items are moved and inserted into the sorted sub-list (in the same array). This algorithm is not suitable for large data sets as its average and worst-case complexity are of Ο(n2), where n is the number of items.<br><br>
+
+            <b>How Insertion Works?</b><br>
+            - If it is the first element, it is already sorted. return 1;<br>
+            - Pick the next element<br>
+            - Compare with all elements in the sorted sub-list<br>
+            - Shift all the elements in the sorted sub-list that is greater than the value to be sorted<br>
+            - Insert the value<br>
+            - Repeat until the list is sorted<br><br>
+
+            <b>Sorting is the process of arranging or segregating a group according to its sequence or set.</b><br>
+            <b>Bubble Sort</b> is used in sorting small list by comparing each item and start at the leftmost end of the list.<br>
+            <b>Selection Sort</b> performs numerous comparisons but fewer data movements.<br>
+            The <b>Insertion Sort</b> does not perform exchanges items larger than the target slide to the right until the algorithm reaches the insertion point.<br>
+        </p>
+    </div>
+    <div id = "P2ITEC204">
+        <h1 style="text-align: center;"> <b>Part 2</b></h1>
+        <p>
+            <b>Array</b><br>
+            An array is an indexed sequence of components. Typically, the array occupies sequential storage locations. The length of the array is determined when the array is created, and cannot be changed. Each component of the array has a fixed, unique index.<br>
+            Arrays work as collections of items. You can use them to gather items in a single group and perform various operations on them, e.g., sorting. Besides that, several methods within the framework work on arrays, to make it possible to accept a range of items instead of just one.<br>
+            <br>
+            <b>Array Index</b><br>
+            Array indices are integers. The bracket notation a[i] is used (and not overloaded).<br>
+            Bracket operator performs bounds checking. An array of length n has bounds 0 and n-1.<br>
+            Any component of the array can be inspected or updated by using its index<br>
+            <code>int[] a = new int[10];<br>
+            int[] b = a;<br>
+            int[] c = new int[3] {1,2,3};</code><br>
+            Arrays are homogeneous. However, an array of an object type may contain objects of any subtype of that object. For example, an array of <b>Animal</b> may contain objects of type <b>Cat</b> and objects of type <b>Dog</b>. An array of <b>Object</b> may contain any type of object (but cannot contain primitives)<br>
+            <br>
+            <b>Declaring Array</b><br>
+            Arrays are declared much like variables, with a set of [] brackets after the datatype, like this:<br>
+            <code>string[] names;</code><br>
+            You need to instantiate the array to use it, which is done like this:<br>
+            <code>string[] names = new string[2];</code><br>
+            The number (2) is the size of the array, that is, the number of items we can put in it. Putting items into the array is pretty simple as well:<br>
+            <code>names[0] = "John Doe";</code><br>
+            The for loop is good with arrays as well, for instance, if you need to count each item, like this:<br>
+            <code>for(int i = 0; i < names.Length; i++)<br>
+            Console.WriteLine("Item number " + i + ": " + names[i]);</code><br>
+            It's actually very simple. We use the Length property of the array to decide how many times the loop should iterate, and then we use the counter (i) to output where we are in the process, as well as get the item from the array. Just like we used a number, a so-called index, to put items into the array, we can use it to get a specific item out again.<br>
+            The Array class contains a bunch of smart methods for working with arrays. This example will use numbers instead of strings, just to try something else, but it could just as easily have been strings.<br>
+            Take a look:<br>
+            <code>int[] numbers = new int[5] { 4, 3, 8, 0, 5 };</code><br>
+            With one line, we have created an array with a size of 5, and filled it with 5 integers. By filling the array like this, you get an extra advantage, since the compiler will check and make sure that you don't put too many items into the array. Try adding a number more - you will see the compiler complain about it.<br>
+            Actually, it can be done even shorter, like this:<br>
+            <code>int[] numbers = { 4, 3, 8, 0, 5 };</code><br>
+            This is short, and you don't have to specify a size. The first approach may be easier to read later on though.<br>
+            The only real new thing here is the Array.Sort command. It can take various parameters, for various kinds of sorting, but in this case, it simply takes our array. As you can see from the result, our array has been sorted. The Array class has other methods as well, for instance, the Reverse() method.<br>
+            The arrays we have used so far have only had one dimension. However, C# arrays can be multidimensional, sometimes referred to as arrays in arrays. Multidimensional arrays come in two flavors with C#: Rectangular arrays and jagged arrays. The difference is that with rectangular arrays, all the dimensions have to be the same size, hence the name rectangular. A jagged array can have dimensions of various sizes.<br>
+            <br>
+            <b>Implementation of Array in C#</b><br>
+            An array is a group of like-typed variables that are referred to by a common name. And each data item is called an element of the array. The data types of the elements may be any valid data type like char, int, float, etc., and the elements are stored in a contiguous location. In C# the allocation of memory for the arrays is done dynamically. And arrays are kind of objects, therefore it is easy to find their size using the predefined functions. The variables in the array are ordered and each has an index beginning from 0. Arrays in C# work differently than they do in C/C++.<br>
+            <br>
+            <b>Important Points to Remember About Arrays in C#</b><br>
+            • In C#, all arrays are dynamically allocated.<br>
+            • Since arrays are objects in C#, we can find their length using member length. This is different from C/C++ where we find length using size of operator.<br>
+            • A C# array variable can also be declared like other variables with [] after the data type.<br>
+            • The variables in the array are ordered and each has an index beginning from 0.<br>
+            • C# array is an object of base type System.Array.<br>
+            • Default values of numeric array and reference type elements are set to be respectively zero and null.<br>
+            • A jagged array element are reference types and are initialized to null.<br>
+            • Array elements can be of any type, including an array type.<br>
+            • Array types are reference types which are derived from the abstract base type Array. These types implement IEnumerable and for it, they use foreach iteration on all arrays in C#.<br>
+            <br>
+            <b>Array Properties</b><br>
+            IsFixedSize - It is used to get a value indicating whether the Array has a fixed size or not.<br>
+            IsReadOnly - It is used to check that the Array is read-only or not.<br>
+            IsSynchronized - It is used to check that access to the Array is synchronized or not.<br>
+            Length - It is used to get the total number of elements in all the dimensions of the Array.<br>
+            LongLength - It is used to get a 64-bit integer that represents the total number of elements in all the dimensions of the Array.<br>
+            Rank - It is used to get the rank (number of dimensions) of the Array.<br>
+            SyncRoot - It is used to get an object that can be used to synchronize access to the Array.<br>
+            <br>
+            <b>Array Methods</b><br>
+            AsReadOnly<T>(T[]) - It returns a read-only wrapper for the specified array.<br>
+            BinarySearch(Array,Int32,Int32,Object) - It is used to search a range of elements in a one-dimensional sorted array for a value.<br>
+            BinarySearch(Array,Object) - It is used to search an entire one-dimensional sorted array for a specific element.<br>
+            Clear(Array,Int32,Int32) - It is used to set a range of elements in an array to the default value.<br>
+            Clone() - It is used to create a shallow copy of the Array.<br>
+            Copy(Array,Array,Int32) - It is used to copy elements of an array into another array by specifying starting index.<br>
+            CopyTo(Array,Int32) - It copies all the elements of the current one-dimensional array to the specified one-dimensional array starting at the specified destination array index.<br>
+            CreateInstance(Type,Int32) - It is used to create a one-dimensional Array of the specified Type and length.<br>
+            Empty<T>() - It is used to return an empty array.<br>
+            Finalize() - It is used to free resources and perform cleanup operations.<br>
+            Find<T>(T[],Predicate<T>) - It is used to search for an element that matches the conditions defined by the specified predicate.<br>
+            IndexOf(Array,Object) - It is used to search for the specified object and returns the index of its first occurrence in a one-dimensional array.<br>
+            Initialize() - It is used to initialize every element of the value-type Array by calling the default constructor of the value type.<br>
+            Reverse(Array) - It is used to reverse the sequence of the elements in the entire one-dimensional Array.<br>
+            Sort(Array) - It is used to sort the elements in an entire one-dimensional Array.<br>
+            ToString() - It is used to return a string that represents the current object.<br>
+            <br>
+            <b>LINKED LIST</b><br>
+            What is linked list?<br>
+            A linked list is a data structure, with a sequence of links which contains items. Each link contains a connection to another link. Linked list is the second most-used data structure after array. It is a dynamic data structure whose length can be increased or decreased at runtime.<br>
+            Why Linked list?<br>
+            Arrays can be used to store linear data of similar types, but arrays have the following limitations.<br>
+            • The size of the arrays is fixed: So, we must know the upper limit on the number of elements in advance. Also, generally, the allocated memory is equal to the upper limit irrespective of the usage.<br>
+            • Inserting a new element in an array of elements is expensive because the room has to be created for the new elements and to create room existing elements have to be shifted.<br>
+            For example, in a system, if we maintain a sorted list of IDs in an array id [ ].<br>
+            id [] = [1000, 1010, 1050, 2000, 2040].<br>
+            And if we want to insert a new ID 1005, then to maintain the sorted order, we have to move all the elements after 1000 (excluding 1000).<br>
+            Deletion is also expensive with arrays until unless some special techniques are used. For example, to delete 1010 in id [], everything after 1010 has to be moved.<br>
+            <br>
+            <b>Advantages of Linked List over arrays</b><br>
+            • Dynamic size<br>
+            • Ease of insertion/deletion<br>
+            <br>
+            <b>Disadvantages:</b><br>
+            • Random access is not allowed. We have to access elements sequentially starting from the first node. So, we cannot do binary search with linked lists efficiently with its default implementation. Read about it here.<br>
+            • Extra memory space for a pointer is required with each element of the list.<br>
+            • Not cache friendly. Since array elements are contiguous locations, there is locality of reference which is not there in case of linked lists.<br>
+            <br>
+            How linked lists are arranged in memory?<br>
+            Linked list basically consists of memory blocks that are located at random memory locations. Now, one would ask how are they connected or how they can be traversed? Well, they are connected through pointers. Usually, a block in a linked list is represented through a structure.<br>
+            A linked list is a linear data structure where each element is a separate object. Each element (we will call it a node) of a list is comprising of two items - the data and a pointer to the next node. The last node has a reference to null. The entry point into a linked list is called the head of the list. It should be noted that head is not a separate node, but the reference to the first node.<br>
+            If the list is empty then the head is a null reference.<br>
+            <br>
+            <b>Types of Linked List</b><br>
+            • Singly-linked List<br>
+            • Doubly-linked List<br>
+            <br>
+            <b>Singly Linked List</b><br>
+            In a singly Linked List, each element is represented as a structure called Node. Each Node is divided into two parts:<br>
+            • Data Field - data field is used to contain the value of the element.<br>
+            • Pointer Field - The pointer field, link or simply reference contains the address of the next node in the list of a computer memory which is a number that refers to an object. The next node in the list is called SUCCESSOR. If a node is the last in the list, meaning it has no successor, the pointer field would contain the value NULL.<br>
+            <b>NOTE:</b> that there is no limit to the size of a singly-linked list. Adding a node to a linked-list is simply a matter of:<br>
+            • Creating a new node.<br>
+            • Setting the data field of the new node to the value to be inserted into the list.<br>
+            • Assigning the address of the new node to the pointer field of the current last node in the list.<br>
+            • Setting the pointer field of the new node to NULL.<br>
+            <br>
+            <b>Operation in Singly Linked-List</b><br>
+            • Insert Node – for every insertion of a node, it is usually inserted at the beginning of the list. This is the simplest approach though it’s also possible to insert nodes anywhere in the list.<br>
+            • Search Node – when searching a value existing in a list, it moves along the list then prompts you the address of the node. However, when not found an error will return prompting you that the item can’t be found.<br>
+            • Delete Node – specify a value to delete in the list and it performs first the searching before deleting the value. Again, it moves along the list and when found, the algorithm then deletes the value. After deleting the specified value, it then connects the arrow from the previous link straight across to the following link. This is how links are removed: the reference to the preceding link is changed to point to the following link.<br>
+            <br>
+            <b>Inserting A Node in A Singly-linked List</b><br>
+            General Procedure:<br>
+            • Create a new node for the element.<br>
+            • Set the data field of the new node to the value to be inserted.<br>
+            • Insert the node.<br>
+            Three Locations in Inserting a New Node:<br>
+            • Insert the node at the start of the list (i=1)<br>
+            • Insert the node at the end of the list. (i>length of the list)<br>
+            • Insert the node at the position i, where l &lt i &lt length of the list <br><br>
+            <b>Deleting A Node in A Singly-linked List</b><br>
+            There are basically two ways to identify a node to be deleted in a singly-linked list:<br>
+            • By Position – the position of the node with respect to the start of the list is specified<br>
+            • By Value – the contents of the data field of the node are identified. This method may only be used if the nodes in the list are unique.<br>
+            General Procedure:<br>
+            • Locate the node.<br>
+            • Delete the node.<br>
+            • Release the node from memory.<br>
+            <br>
+            <b>Doubly-linked Lists</b><br>
+            A Doubly Linked List (DLL) contains an extra pointer, typically called the previous pointer, together with the next pointer and data which are there in a singly linked list.<br>
+            • Each node points to not only successor but the predecessor<br>
+            • There are two NULLS: at the first and last nodes in the list<br>
+            • Advantage: given a node, it is easy to visit its predecessor. Convenient to traverse lists backward.<br>
+            A Doubly Linked List allows you to traverse backward as well as forward through the list. Behind this concept is that each link has two references to other links instead of one. Each node is divided into three:<br>
+            • left pointer field<br>
+            • data field<br> 
+            • right pointer field.<br>
+            <br>
+            <b>Inserting A Node in A Doubly-linked List</b><br>
+            General Procedure:<br>
+            • Create a new node for the element.<br>
+            • Set the data field of the new node to the value to be inserted.<br>
+            • Insert the node<br>
+            Three Locations:<br>
+            • Insert the node at the start of the list (i=1)<br>
+            • Insert the node at the end of the list.(i>length of the list)<br>
+            • Insert the node at the position i, where l &lt i &lt length of the list<br>
+            <br>
+            <b>Deleting A Node in a Doubly-linked List</b><br>
+            General Procedure<br>
+            • Locate the node.<br>
+            • Delete the node.<br>
+            • Release the node from memory.<br>
+            <br>
+            <b>Evaluation/Generalization</b><br>
+            • In a linked-list, elements contain links that reference the previous and the successor elements in the list.<br>
+            • Each element is a node that consists of a value and a reference (link) to the next node in the sequence.<br>
+            • A node with its two fields can reside anywhere in memory.<br>
+            • The list maintains a reference variable, front/head that identifies the first element in the sequence. The list ends when the link is null.<br>
+            • A singly-linked list is not a direct access structure. It must be accessed sequentially by moving forward one node at a time.<br>
+            • Elements in a linked-list are called nodes. These are NODE objects that have two instant variables. The first variable is a value for a node and the second variable is a node reference called next that provides a link to the next node.<br>
+            <br>
+            <b>Advantages of Linked List</b><br>
+            • Linked lists are dynamic data structures. That is, they can grow or shrink during the execution of a program.<br>
+            • Efficient memory utilization<br>
+            • Insertion and deletion are easier and efficient.<br>
+            • Linked lists provide flexibility in inserting a data item at a specified position and deletion of a data item from the given position.<br>
+            • Many complex applications can be easily carried out with linked lists.<br>
+            <br>
+            <b>Disadvantages of Linked List</b><br>
+            • More memory: to store an integer number, a node with integer data and address field is allocated. That is more memory space is needed.<br>
+            • Access to an arbitrary data item is a little bit cumbersome and also time-consuming<br>
+            <br>
+            <b>Implementation of LinkedList in C#</b><br>
+            A linked list is a linear data structure which stores elements in the non-contiguous location. The elements in a linked list are linked with each other pointers. Or in other words, linked list consists of nodes where each node contains a data field and reference (link) to the next node in the list.<br>
+            In C#, LinkedList is the generic type of collection which is defined in System.Collections.Generic namespace<br>
+            <br>
+            <b>Important Points:</b><br>
+            • The LinkedList class implements the: Icollection<T>, Ienumerable<T>, IReadOnlyCollection<T>, Icollection, Ienumerable, IDeserializationCallback, Iserializable interfaces.<br>
+            • It also supports enumerators.<br>
+            • You can remove nodes and reinsert them, either in the same list or in another list, which results in no additional objects allocated on the heap.<br>
+            • Every node in a LinkedList<T> object is of the type LinkedListNode<T>.<br>
+            • It does not support chaining, splitting, cycles, or other features that can leave the list in an inconsistent state.<br>
+            • If the LinkedList is empty, the First and Last properties contain null.<br>
+            • The capacity of a LinkedList is the number of elements the LinkedList can hold.<br>
+            • In LinkedList, it is allowed to store duplicate elements but of the same type.<br>
+            <br>
+            <b>How to create a LinkedList in C#?</b><br>
+            A Linked List has 3 constructors which are used to create a LinkedList which are as follows:<br>
+            • LinkedList(): This constructor is used to create an instance of the LinkedList class that is empty<br>
+            • Linked List(IEnumerable): This constructor is used to create an instance of the LinkedList class that contains elements copied from the specified IEnumerable and has sufficient capacity to accommodate the number of elements copied.<br> 
+            • LinkedList(SerializationInfo,StreamingContext(): This constructor is used to create an instance of the LinkedList class that is serializable with the specified SerializationInfo and StreamingContext.<br>
+            <b>Create a LinkedList using LinkedList() constructor:</b><br>
+            Step 1: Include System.Collections.Generic namespace in your program with the help of using keyword:<br>
+            Step 2: Create a LinkedList using LinkedList class as shown below:<br>
+            LinkedList <Type_of_linkedlist> linkedlist_name = new LinkedList<Type_of_linkedlist>();<br>
+            Step 3: LinkedList provides 4 different methods to add nodes and these methods are:<br>
+            <br>
+            <b>Methods</b><br>
+            AddAfter - This method is used to add a new node or value after an existing node in the LinkedList.<br>
+            AddBefore - This method is used to add a new node or value before an existing node in the LinkedList.<br>
+            AddFirst - This method is used to add a new node or value at the start of the LinkedList.<br>
+            AddLast - This method is used to add a new node or value at the end of the LinkedList.<br>
+            In LinkedList, it is allowed to remove elements from the LinkedList. LinkedList<T> class provides 5 different methods to remove elements and the methods are:<br>
+            <br>
+            <b>Methods</b><br>
+            Clear(): This method is used to remove all nodes from the LinkedList.<br>
+            Remove(LinkedListNode): This method is used to remove the specified node from the LinkedList.<br>
+            Remove(T): This method is used to remove the first occurrence of the specified value from the LinkedList.<br>
+            RemoveFirst(): This method is used to remove the node at the start of the LinkedList.<br>
+            RemoveLast(): This method is used to remove the node at the end of the LinkedList.<br>
+            In linkedList, you can check whether the given value is present or not using the Contains(T) method.
+            Contains(T): This method is used to remove all nodes from the LinkedList.<br>
+            <br>
+            <b>HashSet</b><br>
+            A set is a data structure that stores unique elements of the same type in a sorted order. Each value is a key, which means that we access each value using the value itself. With arrays, on the other hand, we access each value by its position in the container (the index). <b>Set</b> is the general interface to a set-like collection, while <b>HashSet</b> is a specific implementation of the Set interface (which uses hash codes, hence the name). Set is a parent interface of all set classes like TreeSet. HashSet is implementation of Set Interface which does not allow duplicate value.<br><br>
+            Examples:<br>
+            • Spell Checker that checks words as a user types them needs to extremely fast, so it uses a hashset of real words to check if a given word is real or not<br><br>
+            <b>Operations In HashSet</b><br>
+            • <b>Insert</b><br>
+            • Adds item to the indicated place/cell<br>
+            • The process is very fast because it only includes one step<br>
+            • Every data inserted is placed in the first vacant cell<br>
+            • <b>Search</b><br>
+            • Another process that the algorithm carries out<br>
+            • Moves methodically downwards to search for the item<br>
+            • <b>Delete</b><br>
+            • The algorithm must first locate the item to delete it<br>
+            • The deleted item causes hole in the array<br>
+            • Hole – one or more cells that have filled cells above them<br><br>
+            <b>HashSet in C#</b><br>
+            In C#, HashSet is an unordered collection of unique elements. This collection is introduced in .NET 3.5. It supports the implementation of sets and uses the hash table for storage. This collection is of the generic type collection and it is defined under System.Collections.Generic namespace. It is generally used when we want to prevent duplicate elements from being placed in the collection. The performance of the HashSet is much better in comparison to the list.<br><br>
+            <b>Important Points:</b><br>
+            • The HashSet class implements the ICollection, IEnumerable, IReadOnlyCollection, ISet, IEnumerable, IDeserializationCallback, and ISerializable interfaces.<br>
+            • In HashSet, the order of the element is not defined. You cannot sort the elements of HashSet.<br>
+            • In HashSet, the elements must be unique<br>
+            • In HashSet, duplicate elements are not allowed.<br>
+            • Is provides many mathematical set operations, such as intersection, union, and difference.<br>
+            • The capacity of a HashSet is the number of elements it can hold.<br>
+            • A HashSet is a dynamic collection means the size of the HashSet is automatically increased when the new elements are added.<br>
+            • In HashSet, you can only store the same type of elements.<br><br>
+            The HashSet class provides 7 different types of constructors which are used to create a HashSet, here we only use HashSet(), constructor.<br><br>
+            <b>HashSet()</b>: It is used to create an instance of the HashSet class that is empty and uses the default equality comparer for the set type.<br><br>
+            Step 1: Include System.Collections.Generic namespace in your program with the help of using keyword: <code>using System.Collections.Generic;</code><br>
+            Step 2: Create a HashSet using the HashSet class as shown below:<br>
+            <code>HashSet<Type_of_hashset> Hashset_name = new HashSet<Type_of_hashset>();</code><br>
+            Step 3: If you want to add elements in your HashSet, then use Add() method to add elements in your HashSet. And you can also store elements in your HashSet using collection initializer.<br>
+            Step 4: The elements of HashSet is accessed by using a foreach loop.<br><br>
+            <b>How to Remove HashSet in C#?</b><br>
+            In HashSet, you are allowed to remove elements from the HashSet. HashSet<T> class provides three different methods to remove elements and the methods are:<br>
+            • Remove(T): This method is used to remove the specified element from a HashSet object.<br>
+            • RemoveWhere(Predicate): This method is used to remove all elements that match the conditions defined by the specified predicate from a HashSet collection.<br>
+            • Clear: This method is used to remove all elements from a HashSet object.<br><br>
+            <b>Hashset operations</b><br>
+            HashSet class also provides some methods that are used to perform different operations on sets. The method is used in a situation where we want to prevent duplicates from being inserted in the collection.<br>
+            • UnionWith(IEnumerable): This method is used to modify the current HashSet object to contain all elements that are present in itself, the specified collection, or both.<br>
+            • IntersectWith(IEnumerable): This method is used to modify the current HashSet object to contain only elements that are present in that object and in the specified collection.<br>
+            • ExceptWith(IEnumerable): This method is used to remove all elements in the specified collection from the current HashSet object.<br>
+        </p>
+    </div>
+    <div id = "P3ITEC204">
+        <h1 style="text-align: center;"> <b>Part 3</b></h1>
+        <p>
+            <b>STACKS AND QUEUES DATA STRUCTURE</b><br><br>
+            What is Stack?<br>
+            A <b>STACK</b> is an ordered list where all operations are restricted at one end of the list known as the top. A STACK is container of objects that are inserted and removed according to the <b>last-in first-out (LIFO)</b> principle.<br>
+            Application of the Stack<br>
+            ✓ Infix to Postfix /Prefix conversion<br>
+            ✓ “Undo” mechanism in text editors; this operation is accomplished by keeping all text changes in a stack.<br>
+            ✓ To reverse a word. You push a given word to stack - letter by letter - and then pop letters from the stack.<br>
+            ✓ Forward and backward features in web browsers<br>
+            ✓ An "<b>undo</b>" mechanism in text editors; this operation is accomplished by keeping all text changes in a stack.<br>
+            ✓ Undo/Redo stacks in Excel or Word.<br>
+            <br>
+            <b>Stack Operations</b><br>
+            Stack operations are restricted to the elements at the top of the stack.<br>
+            ✓ <b>Push</b> – Push operation refers to inserting an element in the stack. Since there’s only one position at which the new element can be inserted — Top of the stack, the new element is inserted at the top of the stack.<br>
+            ✓ <b>Pop</b>– pop operation refers to the removal of an element. Again, since we only have access to the element at the top of the stack, there’s only one element that we can remove. We just remove the top of the stack.<br>
+            ✓ <b>Peek</b> – Peek operation allows the user to see the element on the top of the stack. The stack is not modified in any manner in this operation.<br>
+            ✓ <b>Is Empty</b>- Check if stack is empty or not. To prevent performing operations on an empty stack, the programmer is required to internally maintain the size of the stack which will be updated during push and pop operations accordingly. isEmpty() conventionally returns a boolean value: True if size is 0, else False.<br>
+            Pushing is the function were placing an item on the top of the stack.<br>
+            Popping is the removal of the item from the top. This type of behavior in the list processing is called LIFO (Last-In-First-Out).<br>
+            <br>
+            <b>Evaluation of Expression</b><br>
+            An Expression is made up of operands and operators. The operations to be performed on the operands are described by the associated operator. In evaluating any given expression, operators of a higher precedence are processed first. When two adjacent operators in an expression have the same precedence, evaluation is performed from left to right.<br>
+            How can a compiler accept an expression and produce a correct code? The answer is given by the rewriting the expression into a form called the <b>Postfix Notation</b>. Infix Notation is being used in writing all of the expressions. The Infix Notation is characterized by the sequence:<br>
+            <b>C + D</b><br>
+            The Postfix Notation, on the other hand is characterized by the sequence<br>
+            <b>C D +</b><br>
+            Postfix notation, also known as <b>reverse Polish notation</b>, is a syntax for mathematical expressions in which the mathematical operator is always placed after the operands. Though postfix expressions are easily and efficiently evaluated by computers, they can be difficult for humans to read. Complex expressions using standard parenthesized infix notation are often more readable than the corresponding postfix expressions. Consequently, we would sometimes like to allow end users to work with infix notation and then convert it to postfix notation for computer processing. Sometimes, moreover, expressions are stored or generated in postfix, and we would like to convert them to infix for the purpose of reading and editing.<br>
+            <br>
+            <b>Infix Expression</b><br>
+            An infix expression may be directly translated into postfix form by beginning with the conversion of the sub-expression with the highest precedence and so on. One important rule to remember when converting expressions is that the order by which the operands appear in the infix expression must be the same when in the postfix form.<br>
+            Why postfix representation of the expression?<br>
+            Infix expressions are easily readable and solvable by humans whereas the computer cannot differentiate the operators and parenthesis easily so, it is better to convert the expression to postfix(or prefix) form before evaluation. The corresponding expression in postfix form is <b>abc*+d+</b>. The postfix expressions can be evaluated easily using a stack.<br>
+            <br>
+            <b>Infix to Postfix</b><br>
+            An infix expression may be directly translated into postfix form by beginning with the conversion of the sub-expression with the highest precedence and so on.<br>
+            Example: The expression 1 + 2 × 3 is interpreted to have the value 1 + (2 × 3) = 7, and not (1 + 2) × 3 = 9<br>
+            Order of Precedence or Operations<br>
+            <b>PEMDAS=Parenthesis Exponents Multiplication Division Addition Subtraction</b>.<br>
+            How to convert an Infix expression to Postfix expression using Stack<br>
+            1. Scan all the symbols one by one from left to right in the given Infix Expression.<br>
+            2. If the reading symbol is an operand, then immediately append it to the Postfix Expression.<br>
+            3. If the reading symbol is left parenthesis ‘( ‘, then Push it onto the Stack.<br>
+            4. If the reading symbol is right parenthesis ‘)’, then Pop all the contents of the stack until the respective left parenthesis is popped and append each popped symbol to Postfix Expression.<br>
+            5. If the reading symbol is an operator (+, –, *, /), then Push it onto the Stack. However, first, pop the operators which are already on the stack that have higher or equal precedence than the current operator and append them to the postfix. If an open parenthesis is there on top of the stack then push the operator into the stack.<br>
+            6. If the input is over, pop all the remaining symbols from the stack and append them to the postfix.<br>
+            <br>
+            <b>Postfix to Infix</b><br>
+            How to convert Postfix expression to Infix expression using Stack<br>
+            1. Start Iterating the given Postfix Expression from Left to right If Character is operand then push it into the stack.<br>
+            2. If Character is operator then pop top 2 Characters which is operands from the stack.<br>
+            3. After popping create a string in which coming operator will be in between the operands.<br>
+            4. push this newly created string into stack.<br>
+            5. Above process will continue till expression have characters left<br>
+            <br>
+            <b>Evaluation/Generalization</b><br>
+            ✓ In Stack, only one data item can be accessed, it is the last item inserted.<br>
+            ✓ Stacks are also useful in implementing recursion.<br>
+            ✓ The important stack operations are pushing (inserting) an item onto top of the stack and popping (removing) the item that’s on the top.<br>
+            ✓ The efficiency of stack is that no comparisons or moves are necessary to perform any operations of it.<br>
+            Stack represents a last-in, first out collection of objects. It is used when you need a last-in, first-out access to items. When you add an item in the list, it is called pushing the item and when you remove it, it is called popping the item. This class comes under <b>System.Collections</b> namespace<br>
+            Characteristics of Stack Class:<br>
+            ✓ The capacity of a Stack is the number of elements the Stack can hold. As elements are added to a Stack, the capacity is automatically increased as required through reallocation.<br>
+            ✓ If Count is less than the capacity of the stack, Push is an O(1) operation. If the capacity needs to be increased to accommodate the new element, Push becomes an O(n) operation, where n is Count. Pop is an O(1) operation.<br>
+            ✓ Stack accepts null as a valid value and allows duplicate elements.<br>
+            <br>
+            <b>Stack Constructors</b><br>
+            Stack()- Initializes a new instance of the Stack class that is empty and has the default initial capacity.<br>
+            Stack(ICollection)- Initializes a new instance of the Stack class that contains elements copied from the specified collection and has the same initial capacity as the number of elements copied.<br>
+            Stack(Int32)- Initializes a new instance of the Stack class that is empty and has the specified initial capacity or the default initial capacity, whichever is greater.<br>
+            <br>
+            <b>Stack Properties</b><br>
+            Count -Gets the number of elements contained in the Stack.<br>
+            IsSynchronized- Gets a value indicating whether access to the Stack is synchronized (thread safe).<br>
+            SyncRoot- Gets an object that can be used to synchronize access to the stack.<br>
+            <br>
+            <b>Stack Methods</b><br>
+            Clear()- Removes all objects from the Stack.<br>
+            Clone()- Creates a shallow copy of the Stack.<br>
+            Contains(Object)- Determines whether an element is in the Stack.<br>
+            CopyTo(Array, Int32)- Copies the Stack to an existing one-dimensional Array, starting at the specified array index.<br>
+            Equals(Object)- Determines whether the specified object is equal to the current object.<br>
+            GetEnumerator()- Returns an IEnumerator for the Stack.<br>
+            GetHashCode()- Serves as the default hash function<br>
+            GetType()- Gets the Type of the current instance.<br>
+            MemberwiseClone()- Creates a shallow copy of the current Object.<br>
+            Peek()- Returns the object at the top of the Stack without removing it.<br>
+            Pop()- Removes and returns the object at the top of the Stack.<br>
+            Push(Object)- Inserts an object at the top of the Stack.<br>
+            Synchronized(Stack)- Returns a synchronized (thread safe) wrapper for the Stack.<br>
+            ToArray()- Copies the Stack to a new array.<br>
+            ToString()- Returns a string that represents the current object.<br>
+            <br>
+            What is Queue Data Structure?<br>
+            A <b>Queue</b> is defined as a linear data structure that is open at both ends and the operations are performed in <b>First In First Out (FIFO)</b> order. We define a queue to be a list in which all additions to the list are made at one end, and all deletions from the list are made at the other end. The element which is first pushed into the order, the operation is first performed on that.<br>
+            Real life examples:<br>
+            • Waiting in line<br>
+            • Waiting on hold for tech support<br>
+            Applications related to Computer<br>
+            Queue is used when things don’t have to be processed immediately, but have to be processed in First In First Out order like Breadth First Search. This property of Queue makes it also useful in following kind of scenarios.<br>
+            • When a resource is shared among multiple consumers. Examples include CPU scheduling, Disk Scheduling.<br>
+            • When data is transferred asynchronously (data not necessarily received at same rateas sent) between two processes. Examples include IO Buffers, pipes, file IO, etc.<br><br>
+            FIFO Principle of Queue:<br>
+            • A Queue is like a line waiting to purchase tickets, where the first person in line is the first person served. (i.e. First come first serve).<br>
+            • Position of the entry in a queue ready to be served, that is, the first entry that will be removed from the queue, is called the front of the queue(sometimes, head of the queue), similarly, the position of the last entry in the queue, that is, the one most recently added, is called the rear (or the tail) of the queue. See the below figure.<br>
+            Characteristics of Queue:<br>
+            • Queue can handle multiple data.<br>
+            • We can access both ends.<br>
+            • They are fast and flexible.<br><br>
+            Types of Queues:<br>
+            • Simple Queue: Simple queue also known as a linear queue is the most basic version of a queue. Here, insertion of an element i.e. the Enqueue operation takes place at the rear end and removal of an element i.e. the Dequeue operation takes place at the front end. Here problem is that if we pop some item from front and then rear reach to the capacity of the queue and although there are empty spaces before front means the queue is not full but as per condition in isFull() function, it will show that the queue is full then.<br>
+            • Circular Queue: In a circular queue, the element of the queue act as a circular ring. The working of a circular queue is similar to the linear queue except for the fact that the last element is connected to the first element. Its advantage is that the memory is utilized in a better way. This is because if there is an empty space i.e. if no element is present at a certain position in the queue, then an element can be easily added at that position using modulo capacity(%n).<br>
+            • Priority Queue: This queue is a special type of queue. Its specialty is that it arranges the elements in a queue based on some priority. The priority can be something where the element with the highest value has the priority so it creates a queue with decreasing order of values. The priority can also be such that the element with the lowest value gets the highest priority so in turn it creates a queue with increasing order of values.<br>
+            • Dequeue: Dequeue is also known as Double Ended Queue. As the name suggests double ended, it means that an element can be inserted or removed from both ends of the queue, unlike the other queues in which it can be done only from one end. Because of this property, it may not obey the First In First Out property.<br><br>
+            Representation of Queue<br>
+            1. Array Representation of Queue:<br>
+            Like stacks, Queues can also be represented in an array: In this representation, the Queue is implemented using the array. Variables used in this case are<br>
+            • Queue: the name of the array storing queue elements.<br>
+            • Front: the index where the first element is stored in the array representing the queue.<br>
+            • Rear: the index where the last element is stored in an array representing the queue.<br>
+            2. Queue as Singly-linked List<br>
+            When using singly-linked list to represent a queue, all insertion operations are performed at the TAIL, while all deletion and retrieval operations are done from the HEAD.Queues are represented as singly-linked lists when the maximum size is known.<br><br>
+            • <b>Enqueue</b><br>
+            Inserts an element at the end of the queue i.e. at the rear end. Queues maintain two data pointers, front and rear. Therefore, its operations are comparatively difficult to implement than that of stacks.<br>
+            The following steps should be taken to enqueue (insert) data into a queue −<br>
+            Step 1 − Check if the queue is full.<br>
+            Step 2 − If the queue is full, produce overflow error and exit.<br>
+            Step 3 − If the queue is not full, increment rear pointer to point the next empty space.<br>
+            Step 4 − Add data element to the queue location, where the rear is pointing.<br>
+            Step 5 − return success.<br><br>
+            • <b>Dequeue</b><br>
+            This operation removes and returns an element that is at the front end of the queue. Accessing data from the queue is a process of two tasks − access the data where front is pointing and remove the data after access.<br>
+            The following steps are taken to perform dequeue operation<br>
+            Step 1 − Check if the queue is empty.<br>
+            Step 2 − If the queue is empty, produce underflow error and exit.<br>
+            Step 3 − If the queue is not empty, access the data where front is pointing.<br>
+            Step 4 − Increment front pointer to point to the next available data element.<br>
+            Step 5 − Return success.<br><br>
+            • <b>Peek or Retrieve</b><br>
+            The retrieving of element in the queue is to simply print or display the element at the bottom of the list. Basically, what is being viewed or retrieved is what you are about to delete remove and not what you have inserted.<br>
+            • Empty Or Full<br>
+            If in any case that the list is EMPTY and you are trying to retrieve element from the list, it should then return an error because the queue is empty. On the other hand, it can also give you a message that the queue is FULL when trying to insert another element.<br>
+            Implementation of Queues in C#<br>
+            Queue represents a first-in, first out collection of object. It is used when you need a first-in, first-out access of items. When you add an item in the list, it is called enqueue, and when you remove an item, it is called dequeue . This class comes under <b>System.Collections</b> namespace and implements ICollection, IEnumerable, and ICloneable interfaces.<br><br>
+            Characteristics of Queue Class:<br>
+            • Enqueue adds an element to the end of the Queue.<br>
+            • Dequeue removes the oldest element from the start of the Queue.<br>
+            • Peek returns the oldest element that is at the start of the Queue but does not remove it from the Queue.<br>
+            • The capacity of a Queue is the number of elements the Queue can hold.<br>
+            • As elements are added to a Queue, the capacity is automatically increased as required by reallocating the internal array.<br>
+            • Queue accepts null as a valid value for reference types and allows duplicate elements.<br><br>
+            <b>Queue Constructors</b><br>
+            CONSTRUCTOR DESCRIPTION<br>
+            Queue()- Initializes a new instance of the Queue class that is empty, has the default initial capacity, and uses the default growth factor.<br>
+            Queue(ICollection)- Initializes a new instance of the Queue class that contains elements copied from the specified collection, has the same initial capacity as the number of elements copied, and uses the default growth factor.<br>
+            Queue(Int32)- Initializes a new instance of the Queue class that is empty, has the specified initial capacity, and uses the default growth factor.<br>
+            Queue(Int32, Single)- Initializes a new instance of the Queue class that is empty, has the specified initial capacity, and uses the specified growth factor.<br>
+            How to create an Queue using Queue() constructor<br>
+            Step 1: Include System.Collections namespace in your program with the help of using keyword.<br>
+            Syntax:<br>
+            using System.Collections;<br>
+            Step 2: Create an queue using Queue class as shown below:<br>
+            Queue queue_name = new Queue();<br>
+            Step 3: If you want to add elements in your queue then use Enqueue() method to add elements in your queue. As shown in the below example.<br><br>
+            How to remove elements from the Queue?<br>
+            In Queue, you are allowed to remove elements from the queue. The Queue class provides two different methods to remove elements and the methods are:<br>
+            • Clear: This method is used to remove the objects from the queue.<br>
+            • Dequeue: This method removes the beginning element of the queue.<br>
+            How to get topmost element of the queue?<br>
+            In Queue, you can easily find the topmost element of the queue by using the following methods provided by the Queue class:<br>
+            • Peek: This method returns the object at the beginning of the Queue without removing it.<br>
+            • Dequeue: This method returns the object at the beginning of the Queue with modification means this method remove the topmost element of the queue.<br>
+            How to check the availability of elements in the queue?<br>
+            In Queue, you can check whether the given element is present or not using Contain()- method. Or in other words, if you want to search an element in the given queue use Contains() method.<br>
+        </p>
+    </div>
+    <div id = "P4ITEC204">
+        <h1 style="text-align: center;"> <b>Part 4</b></h1>
+        <p>
+            <b>What is Tree?</b><br>
+            • A Tree is a collection of nodes connected by edges or lines.<br>
+            • The collection can be empty.<br>
+            • If not empty, a tree consists of a distinguished node R (the root), and zero or more nonempty subtrees T1, T2, ...., Tk, each of whose roots are connected by a directed edge from R.<br>
+            • In nature, Trees have a very distinct feature compared to trees in data structure. Trees in nature grow upward while in data structure, it grows in the opposite way. Its root is on the top and the leaves are at the bottom.<br>
+            • Unlike arrays, linked lists, stacks, and queues which are linear data structures, Trees are hierarchical data structures.<br><br>
+
+            <b>Why Trees?</b><br>
+            • One reason to use trees might be because you want to store information that naturally forms a hierarchy. For example, the file system on a computer.<br>
+            • Trees (with some ordering e.g., BST) provide moderate access/search (quicker than Linked List and slower than arrays).<br>
+            • Trees provide moderate insertion/deletion (quicker than Arrays and slower than Unordered Linked Lists).<br><br>
+
+            <b>Main Application of Trees</b><br>
+            • Manipulate hierarchical data.<br>
+            • Make information easy to search (see tree traversal).<br>
+            • Manipulate sorted lists of data.<br>
+            • As a workflow for compositing digital images for visual effects.<br>
+            • Router algorithms.<br>
+            • Form of a multi-stage decision-making.<br><br>
+
+            <b>Operations Used In Trees</b><br>
+            • Trees can perform quick insertion and deletion. Obvious examples of TREES are genealogies and organizational charts.<br><br>
+
+            <b>Trees – Data Structure</b><br>
+            • A TREE is composed of nodes connected by edges or lines.<br><br>
+
+            <b>Basic Terminologies</b><br>
+            • Nodes – these are what the trees are composed of. These are the ones being connected by edges or lines. These contain a value of represent a data structure.<br>
+            • Root Node – this is a node at the topmost of the tree and where the tree commonly begins; definitely this node will have no parents at all. Any nodes can be a root node as long as it is rooted as a parent node. You can access this leaf node through the edges or lines.<br>
+            • Edges/Lines/Paths – these are lines connecting to nodes that describe their relationship. These lines represent convenience in using a time because of easy access for the program; just by passing through the paths along the lines, you can access any nodes you want. Generally, you are allowed only once in accessing the nodes and that are from root downward.<br>
+            • Leaf Nodes – these are nodes that are at the bottommost level of the tree and so, they have no any children. Note that these can only be one and root node but there can be many leaves. Leaves also known as terminal nodes have a zero degree.<br>
+            • Internal Nodes / Child Nodes – These are the nodes that are inside the tree or the nodes below a given node. They are also known as SIBLING NODE.<br>
+            • Subtree – a subtree is viewed as a complete tree itself which consists of children and its children’s and so on. The subtree corresponding to the root node is called the entire tree; the subtree corresponding to any other node is called a proper subtree.<br>
+            • Visiting – a node is said to be visited when a program control arrives at the node to perform operations such as checking the value of one of its data fields or simply to display it. Passing over a node on the path is not considered as visiting the node.<br>
+            • Traversing – to visit all the nodes in a specific order is called traverse or more commonly known as walking the tree and the action is walk.<br>
+            • Levels – the levels are generations that a tree has starting on the root.<br>
+            • Degree – this refers to the number of nodes in a subtree.<br>
+            • Depth Of The Line – the depth of the tree is the highest level.<br>
+            • Keys – keys in tree diagrams represent the value inside a node represented in a circle.<br><br>
+
+            <b>Binary Tree</b><br>
+            • If every node in a tree can have at most children, it is called a binary tree. Its subtree on its left is called the left subtree while on the other is the right subtree.<br>
+            • A Binary Tree can contain only a left or right subtree or no nodes at all, in which case it’s a leaf.<br><br>
+
+            <b>Types of Binary Tree</b><br>
+            1. Full Binary Tree: A Binary Tree Is Full If Every Node Has 0 Or 2 Children. Following Are Examples of a Full Binary Tree. We Can Also Say A Full Binary tree Is A Binary Tree in Which All Nodes Except Leaves Have Two Children.<br>
+            2. Complete Binary Tree: A Binary Tree is a complete Binary Tree if all levels are completely filled except possibly the last level and the last level has all keys as left as possible.<br>
+            3. Degenerate (or pathological) tree: A Tree where every internal node has one child. Such trees are performance-wise same as linked lists.<br><br>
+
+            <b>Binary Tree – Applications</b><br>
+            The advantages of using a tree are that it is easy to implement and has good performance for searching.<br>
+            There are two applications of a binary tree:<br>
+            • Binary Expression Tree.<br>
+            • Binary Search Tree.<br><br>
+
+            <b>Binary Search Tree</b><br>
+            • Binary Search Trees are trees such that any node has a key which is no more than the key in its right child node and no less than the key in its left child node.<br><br>
+
+            <b>BST Operation – Inserting a Node</b><br>
+            Start from the root node, if the node to insert is less than the root, we go to the left child, and otherwise, we go to the right child of the root. We continue this process (each node is a root for some subtree) until we find a null pointer (or leaf node) where we cannot go any further. We then insert the node as a left or right child of the leaf node based on whether the node is less or greater than the leaf node. We note that a new node is always inserted as a leaf node.<br>
+            Insert(N, T) = N if T is empty <br>
+            = insert(N, T.left) if N < T <br>
+            = insert(N, T.right) if N > T <br><br>
+
+            <b>BST Operation – Searching for a Node</b><br>
+            Searching for a node is similar to inserting a node. We start from the root, and then go left or right until we find (or not find the node). A recursive definition of search is as follows. If the node is equal to the root, then we return true. If the root is null, then we return false. Otherwise, we recursively solve the problem for T.left or T.right, depending on N < T or N > T. A recursive definition is as follows. Search should return true or false, depending on whether the node is found or not.<br>
+            Search(N, T) = false if T is empty <br>
+            = true if T = N <br>
+            = search(N, T.left) if N < T <br>
+            = search(N, T.right) if N > T <br><br>
+
+            <b>BST Operation – Deleting a Node</b><br>
+            • A BST is a connected structure. That is, all nodes in a tree are connected to some other node. For example, each node has a parent unless the node is the root. Therefore, deleting a node could affect all subtrees of that node. For example, deleting node 5 from the tree could result in losing subtrees that are rooted at 1 and 9.<br>
+            • Hence, we need to be careful about deleting nodes from a tree. The best way to deal with deletion seems to be considering special cases. What if the node to delete is a leaf node? What if the node is a node with just one child? What if the node is an internal node (with two children)? The latter case is the hardest to resolve. But we will find a way to handle this situation as well.<br><br>
+
+            <b>BST Operation – Deleting a Node</b><br>
+            <b>Case 1:</b> The node to delete is a leaf node. This is a very easy case. Just delete the node. We are done.<br>
+            <b>Case 2:</b> The node to be deleted is a node with one child. This is also not too bad. If the node to be deleted is a left child of the parent, then we connect the left pointer of the parent (of the deleted node) to the single child. Otherwise, if the node to be deleted is a right child of the parent, then we connect the right pointer of the parent (of the deleted node) to the single child.<br>
+            <b>Case 3:</b> The node to be deleted is a node with two children<br>
+            1. Find a replacement node (from leaf node or nodes with one child) for the node to be deleted. Then we swap leaf node or node with one child with the node to be deleted (swap the data) and delete the leaf node or node with one child (case 1 or case 2).<br>
+            2. Next problem is finding a replacement leaf node for the node to be deleted. We can easily find this as follows. If the node to be deleted is N, then find the largest node in the left subtree of N or the smallest node in the right subtree of N. These are two candidates that can replace the node to be deleted without losing the order property.<br>
+            3. Then we find the largest node in the left subtree (15) or the smallest node in the right subtree (45) and replace the root with that node and then delete that node.<br><br>
+
+            <b>Binary Expression Tree</b><br>
+            • An Expression Tree is a binary tree used in representing arithmetic expression; specifically, the combinations of operators, operands, and order of evaluation.<br>
+            • For simplicity, let us assume that the only operations possible are: plus (+), minus (-), times (*), and divide (/).<br>
+            • The leaves of an expression tree will always contain operands. The root of all subtrees (except subtrees with one node) will always represent the operators in the expression.<br>
+            • In the sample expression tree, the leaf nodes {A, B, C, D, F} represent the set of operands in the expression. The set of root nodes { +, *, +/, +} represents all the operators in the expression.<br>
+            • In any given mathematical expression, there are always at most two (2) operands to one (1) operator. Since all operators are root nodes and all operands are leaf nodes, this means that an expression tree is, in fact, a binary tree.<br><br>
+
+            <b>Binary Tree Traversal</b><br>
+            • Traversing a tree means to visit all the nodes of the tree in order. This process is not commonly used as finding, inserting, deleting nodes because traversal is not particularly fast but another operation you can perform in a binary tree.<br>
+            • Here are three different methods of traversing a tree:<br>
+            1. Inorder<br>
+            2. Preorder<br>
+            3. Postorder<br>
+            • Among the three methods, Inorder is commonly used for binary search trees.<br>
+            • The other two methods are useful when writing programs that parse or analyze algebraic expressions.<br>
+            • An infix notation when traversing using InOrder traversal generates the correct inorder sequence.<br>
+            • While the Preorder method generates the prefix notation, and the Postorder method generates the postfix notation of the binary tree. When a tree is empty, it is “traversed” by doing nothing. The following is a recursive definition of the steps needed for each of the tree types of traversal.<br><br>
+
+            <b>InOrder Traversal Steps</b><br>
+            1. If the node has a left subtree:<br>
+            • Traverse the left subtree in preorder (recursive call). Once completed, proceed to step 2.<br>
+            • Otherwise, proceed to step 2.<br>
+            2. Read the root node. If the node has a right subtree:<br>
+            • Traverse the right subtree in preorder (recursive call).<br><br>
+
+            <b>Preorder Traversal</b><br>
+            1. Read the root node.<br>
+            2. If the node has a left subtree:<br>
+            • Traverse the left subtree in preorder (recursive call). Once completed, proceed to step 3.<br>
+            • Otherwise, proceed to step 3.<br>
+            3. If the node has a right subtree:<br>
+            • Traverse the right subtree in preorder (recursive call).<br><br>
+
+            <b>Postorder Traversal</b><br>
+            1. If the node has a left subtree:<br>
+            • Traverse the left subtree in preorder, once completed proceed to step 2.<br>
+            • Otherwise, proceed to step 2.<br>
+            2. If the node has a right subtree:<br>
+            • Traverse the right subtree in preorder, once completed proceed to step 3.<br>
+            • Otherwise, proceed to step 3.<br>
+            3. Read the root.<br><br>
+
+            <b>Evaluation/Generalization</b><br>
+            • Tree consists of nodes (circles) connected by edges (lines).<br>
+            • The root is the topmost node in a tree; it has no parent.<br>
+            • In a binary tree, a node has at most two children.<br>
+            • In a binary search tree, all nodes that are left descendants of node A have a key value less than A; all the nodes that are A’s right descendant have key values greater than or equal to A.<br>
+            • Nodes represent the data-objects being stored in the tree.<br>
+            • Edges are most commonly represented in a program by references to a node’s children and sometimes to its parent.<br>
+            • Traversing a tree means visiting all its nodes in some order.<br>
+            • The simplest traversals are inorder, preorder, and postorder.<br>
+            • Insertion involves finding the place to insert the new node and then changing a child field in its new parent to refer to it.<br>
+            • An inorder traversal visits nodes in order of ascending keys.<br>
+            • Preorder and postorder traversals are useful for parsing algebraic expressions.<br>
+            • In binary expression trees, operators are the internal nodes while operands are the leaf nodes.<br><br>
+
+            <b>What is Graph?</b><br>
+            • A graph consists of a number of data items, each of which is called a vertex. Any vertex may be connected to any other, these connections are called edges.<br><br>
+
+            <b>Main Application of Graphs</b><br>
+            • Electronic circuits<br>
+            • Printed circuit board<br>
+            • Integrated circuit<br>
+            • Transportation networks<br>
+            • Highway network<br>
+            • Flight network<br>
+            • Computer networks<br>
+            • Local area network<br>
+            • Wide area network<br>
+            • Internet<br>
+            • Databases<br>
+            • Entity-relationship<br><br>
+
+            <b>Directed And Undirected Graph</b><br>
+            <b>Undirected graph:</b> When the edges in a graph have no direction, the graph is called undirected.<br>
+            <b>Directed graph:</b> When the edges in a graph have a direction, the graph is called a directed graph. Also known as a digraph. This kind of graph contains an ordered pair of vertices, i.e., if the graph is directed, the order of the vertices in each edge is important.<br><br>
+
+            <b>Basic Terminologies</b><br>
+            • Weighted Graph - A graph in which every edge is assigned some value which is greater than or equal to zero.<br>
+            • Adjacent Nodes - When there is an edge from one node to another then these nodes are called adjacent nodes.<br>
+            • Path - a sequence of vertices v1, v2,. . .vk such that consecutive vertices vi and vi+1 are adjacent.<br>
+            • Length of a Path - Length of a path is nothing but the total number of edges included in the path from the source to the destination node.<br>
+            • Simple Path - a path such that all its vertices and edges are distinct.<br>
+            • Cycle - a simple path, except that the last vertex is the same as the first vertex.<br>
+            • Acyclic Graph - A graph without a cycle is called an acyclic Graph. A tree is a good example of a connected acyclic graph.<br>
+            • Connected Graph - An undirected graph is connected if, for any pair of vertices, there is a path between them.<br>
+            • A directed graph is connected if, for any pair of vertices, there is a path between them.<br>
+            • Complete Graph - A graph in which all pairs of vertices are adjacent OR a graph in which every vertex is directly connected to every other vertex.<br>
+            • Let n = Number of vertices, and m = Number of edges. For a complete graph with n vertices, the number of edges is n(n – 1)/2. A graph with 6 vertices needs 15 edges to be complete.<br>
+            • Degree of a node - the total number of edges linked to a node in an Undirected graph. For a directed graph, there are two degrees for every node:<br>
+            • Indegree - The indegree of a node is the total number of edges coming to that node.<br>
+            • Outdegree - The outdegree of a node is the total number of edges going out from that node.<br><br>
+
+            <b>Graph Representation</b><br>
+            There are two methods to represent a Graph:<br>
+            • Adjacency Matrix (Array Implementation)<br>
+            • Adjacency List (Linked List Implementation)<br><br>
+
+            <b>Adjacency Matrix</b><br>
+            • Let G=(V,E) be a graph with n vertices.<br>
+            • The adjacency matrix of G is a two-dimensional n by n array, say adj_mat.<br>
+            • If the edge (vi, vj) is in E(G), adj_mat[i][j]=1.<br>
+            • If there is no such edge in E(G), adj_mat[i][j]=0.<br>
+            • The adjacency matrix for an undirected graph is symmetric; since adj_mat[i][j]=adj_mat[j][i].<br>
+            • The adjacency matrix for a digraph may not be symmetric.<br><br>
+
+            <b>Adjacency Matrix</b><br>
+            • From the adjacency matrix, to determine the connection of vertices is easy.<br>
+            • The degree of a vertex is.<br>
+            • We can also represent a weighted graph with an Adjacency Matrix. Now the contents of the matrix will not be 0 and 1 but the value is substituted with the corresponding weight.<br>
+            • Adjacency List - A Single-Dimension array of Structure is used to represent the vertices. A Linked list is used for each vertex V which contains the vertices that are adjacent from V (adjacency list).<br><br>
+
+            <b>Graph Traversal</b><br>
+            • Traversal is the facility to move through a structure visiting each of the vertices once.<br>
+            • We looked previously at the ways in which a binary tree can be traversed. Two of the traversal methods for a graph are breadth-first and depth-first.<br><br>
+
+            <b>Breadth-First Graph Traversal</b><br>
+            • This method visits all the vertices, beginning with a specified start vertex. It can be described roughly as “neighbors-first”.<br>
+            • No vertex is visited more than once, and vertices are visited only if they can be reached – that is, if there is a path from the start vertex.<br>
+            • Breadth-first traversal makes use of a queue data structure. The queue holds a list of vertices that have not been visited yet but which should be visited soon.<br>
+            • Since a queue is a first-in-first-out structure, vertices are visited in the order in which they are added to the queue.<br>
+            • Visiting a vertex involves, for example, outputting the data stored in that vertex and also adding its neighbors to the queue.<br>
+            • Neighbors are not added to the queue if they are already in the queue or have already been visited.<br><br>
+
+            <b>Depth-First Search</b><br>
+            • From the given vertex, visit one of its adjacent vertices and leave others.<br>
+            • Then visit one of the adjacent vertices of the previous vertex.<br>
+            • Continue the process, visit the graph as deep as possible until:<br>
+            • A visited vertex is reached;<br>
+            • An end vertex is reached.<br><br>
+
+            <b>Depth-First Traversal</b><br>
+            • Depth-first traversal of a graph:<br>
+            • Start the traversal from an arbitrary vertex;<br>
+            • Apply depth-first search;<br>
+            • When the search terminates, backtrack to the previous vertex of the finishing point;<br>
+            • Repeat depth-first search on other adjacent vertices, then backtrack to one level up.<br>
+            • Continue the process until all the vertices that are reachable from the starting vertex are visited.<br>
+            • Repeat the above processes until all vertices are visited.<br>
+            • This method visits all the vertices, beginning with a specified start vertex.<br>
+            • This strategy proceeds along a path from vertex V as deeply into the graph as possible.<br>
+            • This means that after visiting V, the algorithm tries to visit any unvisited vertex adjacent to V.<br>
+            • When the traversal reaches a vertex which has no adjacent vertex, it backtracks and visits an unvisited adjacent vertex.<br>
+            • When the search terminates, it backtracks to the previous vertex of the finishing point.<br><br>
+
+            <b>Depth-First Traversal (In detail)</b><br>
+            1. Start from a vertex, say vertex A.<br>
+            2. Visit any vertex that is adjacent to vertex A. We may have more than one choice. Let us suppose that the adjacent vertex to A is B. Then visit B.<br>
+            3. From B, if we can visit a new vertex (suppose C), we visit the new vertex (C) from the last vertex (B). Repeat the same process until we cannot visit any new vertex.<br>
+            4. Backtrack from the current vertex to a vertex that is not yet visited. We shall backtrack from C to B because we cannot visit any new vertex from vertex C.<br>
+            5. Repeat steps 2 to 4 until all the vertices are visited.<br><br>
+
+            <b>Spanning Tree</b><br>
+            • A Spanning Tree T of an undirected graph G is a subgraph that contains all the vertices of G.<br>
+            • A Spanning Tree does not contain any cycle.<br>
+            • A connected graph G can have more than one spanning tree.<br>
+            • A graph G has only one spanning tree if and only if G is a tree.<br>
+            • If a graph G is not connected, it is impossible to construct a spanning tree for G.<br>
+            • A spanning tree of a graph is used to identify all the vertices that are connected to the graph.<br>
+            • A spanning tree of a graph is used in various applications, such as finding a minimum path in the graph, finding a minimum spanning tree, etc.<br><br>
+
+            <b>Minimum Spanning Tree</b><br>
+            • Given a weighted connected graph, a minimum spanning tree is a spanning tree that has the smallest sum of edge weights.<br>
+            • There are several algorithms for constructing the minimum spanning tree. Among them, Prim’s algorithm and Kruskal’s algorithm are the most common.<br><br>
+
+            <b>Prim’s Algorithm</b><br>
+            • Prim’s algorithm is a greedy algorithm used for finding the minimum spanning tree of a graph.<br>
+            • The algorithm grows a single tree by adding the cheapest vertex from the cut set at each step. It starts with an empty spanning tree and then grows the tree one edge at a time until all the vertices are covered.<br>
+            • It is very similar to Dijkstra’s shortest path algorithm. The difference is that Dijkstra’s algorithm grows a single-source shortest path tree from the source vertex.<br>
+            • The worst-case time complexity of Prim’s algorithm is O(V^2), where V is the number of vertices in the graph.<br><br>
+
+            <b>Prim’s Algorithm in Detail</b><br>
+            • Let G be a graph with a set of vertices, V, and a set of edges, E. Prim’s algorithm selects a subset of E that forms a tree and includes every vertex in V.<br>
+            • The algorithm is as follows:<br>
+            1. Start with an empty spanning tree.<br>
+            2. Select any arbitrary vertex as the initial vertex.<br>
+            3. Select the cheapest edge from the initial vertex and add it to the tree.<br>
+            4. Repeat step 3 until all the vertices are included in the tree.<br><br>
+
+            <b>Prim’s Algorithm in Detail</b><br>
+            • The algorithm can be implemented using a priority queue to store the cheapest edge from each vertex.<br>
+            • The algorithm works by repeatedly selecting the vertex with the smallest weight edge adjacent to the tree and adding it to the tree.<br>
+            • The priority queue is initialized with all the edges adjacent to the initial vertex, and the algorithm selects the edge with the smallest weight from the priority queue at each step.<br>
+            • The algorithm stops when all the vertices are included in the tree.<br><br>
+
+            <b>Kruskal’s Algorithm</b><br>
+            • Kruskal’s algorithm is another greedy algorithm used for finding the minimum spanning tree of a graph.<br>
+            • The algorithm grows a forest of trees by adding the cheapest edge from the cut set at each step. It starts with a forest of single vertex trees and then grows the forest one edge at a time until all the vertices are covered.<br>
+            • The worst-case time complexity of Kruskal’s algorithm is O(E log E), where E is the number of edges in the graph.<br><br>
+
+            <b>Kruskal’s Algorithm in Detail</b><br>
+            • Let G be a graph with a set of vertices, V, and a set of edges, E. Kruskal’s algorithm selects a subset of E that forms a tree and includes every vertex in V.<br>
+            • The algorithm is as follows:<br>
+            1. Start with an empty spanning tree.<br>
+            2. Sort all the edges in non-decreasing order of their weights.<br>
+            3. Select the edge with the smallest weight from the sorted list of edges and add it to the tree.<br>
+            4. Repeat step 3 until all the vertices are included in the tree.<br><br>
+
+            <b>Applications of Minimum Spanning Trees</b><br>
+            • Network design (communication, transportation).<br>
+            • Circuit design (VLSI, PCB).<br>
+            • Approximation algorithms.<br>
+            • Clustering.<br>
+            • Image segmentation.<br>
+            • Molecular biology (evolutionary trees).<br>
+            • Cluster analysis.<br>
+            • Computer vision (image matching).<br><br>
+
+            <b>Graph Traversals</b><br>
+            • Graph traversal is a process of visiting all the vertices of a graph.<br>
+            • There are two main types of graph traversal algorithms:<br>
+            1. Depth-First Traversal.<br>
+            2. Breadth-First Traversal.<br><br>
+
+            <b>Depth-First Traversal (In detail)</b><br>
+            • Depth-first traversal starts at an arbitrary vertex, and then explores as far as possible along each branch before backtracking.<br>
+            • In other words, it visits the first adjacent vertex of a starting point, then visits the first adjacent vertex of this first adjacent vertex, and so on until it reaches the end of the branch. Then it backtracks to the starting point and visits the second adjacent vertex, and so on until all vertices are visited.<br>
+            • The main purpose of the depth-first traversal algorithm is to find a spanning tree or forest of the graph.<br>
+            • Depth-first traversal can be implemented using a stack data structure to store the vertices to be visited.<br><br>
+
+            <b>Breadth-First Traversal (In detail)</b><br>
+            • Breadth-first traversal starts at an arbitrary vertex and explores all the neighboring vertices at the present depth before moving on to the vertices at the next depth level.<br>
+            • In other words, it visits all the vertices that are adjacent to the starting point, then visits all the vertices that are adjacent to these vertices, and so on until it reaches the end of the branch.<br>
+            • Then it visits the vertices that are adjacent to the starting point in the next level, and so on until all vertices are visited.<br>
+            • The main purpose of the breadth-first traversal algorithm is to find the shortest path from one vertex to another vertex in a graph.<br>
+            • Breadth-first traversal can be implemented using a queue data structure to store the vertices to be visited.<br><br>
+
+            <b>Comparison of Depth-First and Breadth-First Traversal</b><br>
+            1. Breadth-first traversal is used to find the shortest path from one vertex to another vertex in a graph.<br>
+            2. Depth-first traversal is used to find a spanning tree or forest of a graph.<br>
+            3. In breadth-first traversal, the shortest path is always found if it exists.<br>
+            4. In depth-first traversal, the shortest path may not be found.<br>
+            5. The time complexity of breadth-first traversal is O(V + E), where V is the number of vertices and E is the number of edges in the graph.<br>
+            6. The time complexity of depth-first traversal is also O(V + E).<br><br>
+
+            <b>Summary</b><br>
+            • Trees and graphs are used to represent the data that are hierarchical and non-hierarchical, respectively.<br>
+            • The most basic operations on trees and graphs are traversal, insertion, and deletion.<br>
+            • The different traversals are inorder, preorder, and postorder. These traversals are used to visit the nodes of the tree in different orders.<br>
+            • The most common traversal for trees is inorder traversal, which generates the correct infix notation for the tree.<br>
+            • The other two traversals, preorder and postorder, generate the prefix and postfix notations of the tree, respectively.<br>
+            • Trees can be used to represent mathematical expressions, and the different traversals can be used to generate the prefix, infix, and postfix notations of the expressions.<br>
+            • Graphs can be used to represent different types of data, such as electronic circuits, transportation networks, computer networks, and databases.<br>
+            • There are two main types of graphs: directed and undirected. Directed graphs have edges with a direction, while undirected graphs have edges without a direction.<br>
+            • Graphs can be represented using two methods: adjacency matrix and adjacency list.<br>
+            • There are two main types of graph traversal algorithms: depth-first traversal and breadth-first traversal.<br>
+            • Depth-first traversal starts at an arbitrary vertex and explores as far as possible along each branch before backtracking.<br>
+            • Breadth-first traversal starts at an arbitrary vertex and explores all the neighboring vertices at the present depth before moving on to the vertices at the next depth level.<br>
+            • The main purpose of depth-first traversal is to find a spanning tree or forest of a graph, while the main purpose of breadth-first traversal is to find the shortest path from one vertex to another vertex in a graph.<br>
+            • Breadth-first traversal is used to find the shortest path from one vertex to another vertex in a graph, while depth-first traversal is used to find a spanning tree or forest of a graph.<br>
+            • The time complexity of both breadth-first and depth-first traversals is O(V + E), where V is the number of vertices and E is the number of edges in the graph.
+        </p>
+    </div>
+    <script src="Navigation.js"></script>
+</div>
+</body>
+</body>
+</html>

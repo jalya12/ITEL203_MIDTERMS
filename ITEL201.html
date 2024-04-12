@@ -1,0 +1,1591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITEL201</title>
+    <link rel="website icon" type="jpg" href="icon.jpg">
+    <link rel="stylesheet" href="ITEL201.css">
+</head>
+<body>
+  <!--Header-->
+  <div id="header">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="Homepage.html">Home</a>
+      <a href="home.html">Reviewer</a>
+      <a href="About.html">About Us</a>
+      <a href="Contact.html">Contact</a>
+    </div>
+    <span onclick="openNav()">&#9776; ITEL201</span>
+    <script src="Navigation.js"></script>
+</div>
+
+  <!--Contents-->
+  <div id = "content">
+    <h1 style="text-align: center;">Object-Oriented Programming</h1>
+    <div id = "P1ITEL201">
+        <h1 style="text-align: center;"> <b>Part 1</b></h1>
+        <p> <b>OOP (Object Oriented Programming)</b><br>
+            ● involves creating program components as objects that are similar to concrete objects in the real world that are manipulated to achieve a desired result<br>
+            ● an extension of procedural programming<br>
+            *when writing programs, it involves creating objects and creating application that use those objects<br>
+            object – an item that contain both data, which are known as attribute/ variables and procedures<br>
+            procedures – step by step sequence of activities that read or manipulate the data<br>
+            procedural programming – list of instructions telling a computer, step by step what to do, usually having a linear order of execution from the first statement<br><br>
+            <b>3 basic concepts of OOP</b><br>
+            ● encapsulation (information hiding) – mechanism that binds together attributes and methods into a single object and keeps both safe from interference and misuse<br>
+            ● inheritance – concept of low levels inheriting methods and attributes of higher levels<br>
+            ● polymorphism – ability of an object to take many forms or identities<br><br>
+            <b>Java</b><br>
+            ● original name was Oak<br>
+            ● invented in 1994 and the first version was introduced in 1995<br>
+            ● created by James Gosling, Patrick Naughton, Mike Sheridan<br>
+            ● developed in SUN (Stanford University Network) Microsystems as part of the Green Project<br>
+            ● similar syntax with C++/ C#<br>
+            *in 1991, a small group of SUN engineers called the “Green Team” believed that the next wave in computing was the union of digital consumer devices and computers<br>
+            *the writing of Java began in December of 1990<br>
+            *in 1995, the team announced that the Netscape Navigator Internet browser would incorporate Java Technology<br>
+            *originally targeted at the digital cable television industry<br><br>
+            <b>Characteristics of Java</b><br>
+            ● simple<br>
+            ● object – oriented<br>
+            ● distributed<br>
+            ● architecture neutral/ platform independent<br>
+            ● portable<br>
+            ● high – performance<br>
+            ● interpreted<br>
+            ● robust<br>
+            ● secure<br>
+            ● multithreaded<br>
+            ● dynamic<br>
+            *Java program is both compiled and interpreted<br>
+            *compiler translates a Java program into an intermediate language called Java bytecode<br>
+            bytecode – the platform independent codes interpreted by Java interpreter<br>
+            interpreter, each bytecode instruction is parsed (reading program code) and run on the computer<br>
+            compilation happens just once; interpretation occurs each time the program is executed<br><br>
+            <b>Java’s Architecture arises out of 4 distinct but Interrelated Technologies:</b><br>
+            ● Java Programming Language<br>
+            ● Java class file format (bytecode)<br>
+            ● Java API (Application Programming Interface)<br>
+            ● JVM (Java Virtual Machine) – where the heart of Java technology lies<br>
+            – the abstract computer on which all Java program run<br>
+            – Java interpreter<br><br>
+            JVM and API combination is called the Java Runtime System/ Java Platform<br>
+            Sample program:<br>
+            1 public class A<br>
+            2 {<br>
+            3 public static void main (String[ ]args)<br>
+            4 {<br>
+            5 System.out.println(“AAAA”);<br>
+            6 //outputs AAAA<br>
+            7 }<br>
+            8 }<br><br>
+            <b>Parts of Java Program</b><br>
+            ● Class (line 1 to line 2)<br>
+            ● method (line 3 to line 7)<br>
+            Line 1: called class heading or class definition<br>
+            Defining a class named A<br>
+            public is an access modifier<br>
+            Line 2: start the body of the program with the use of {<br>
+            Line 3: the first method that Java program executes the main( ) method<br>
+            static means unchanging and indicates that every member created for the class will have an identical unchanging main ( )<br>
+            (String[ ] args) an argument – consist of information that a method requires to perform its task<br>
+            String represents a Java class that can be used to represent character strings<br>
+            Identifier args – used to hold any strings that might be sent to main ( )<br>
+            Line 4: begins the body of the main( ) with the use of the symbol {<br>
+            Line 5: block of statements<br>
+            Line 6: comments embedded in the program<br>
+            comment – improve program readability and also help other people read and understand the program<br>
+            – do not cause any action when the program runs, ignored by the Java compiler<br>
+            Line 7: end of main ( ) method with the use of }<br>
+            Line 8: end of the class with the use of }<br><br>
+            <b>Language Fundamentals</b><br>
+            Identifier<br>
+            ● titles given to variable, class and method<br>
+            ● can be named anything as long as they begin with an alphabet character, a dollar sign or an underscore<br>
+            case sensitive,<br>
+            ● must not contain space and number sign<br>
+            Keyword<br>
+            ● reserved word in Java which are names that may be used only by Java, using these words in any other way will cause a compile error<br>
+            ● cannot be used in any way other than how java intends for them to be used<br>
+            ● always lower case<br>
+            Separator<br>
+            ● use to define the shape and function of Java code<br>
+            ● useful as visual and logical locators<br>
+            { } – separate blocks of code<br>
+            ; – terminate the end of a line of code<br>
+            , – separate list of variables<br>
+            [ ] – define and reference arrays<br>
+            ( ) – indicates precedence in an expression<br>
+            . – separate class from object to method<br>
+            3 Comment Notations<br>
+            ● // (single line comment) – comment terminates at the end of the current line<br>
+            ● /………/ (multiple line comment) – comment that can spread over several lines<br>
+            ● /**……/ (javadoc comment) – similar to multiple line comment<br>
+            Operators – symbols used for mathematical and logical operations/expression<br>
+            expression – Java’s way of performing a computation<br>
+            *main reasons that the code is created are to manipulate, display and store data<br>
+            *operators are used in expressions to do the work of the program and to operate on variables<br>
+            Arithmetic Operators – define operations that apply to numbers<br>
+            
+            %<br>
+            /<br>
+            *except the +, all operators are used only for arithmetic calculation<br>
+            Assignment Operators<br>
+            = - assign value to variable<br>
+            += - add to current variable<br>
+            -= - subtract to current variable<br>
+            *= - multiply to current variable<br>
+            /= - divide to current variable<br>
+            %= - modulus to current variable<br>
+            Increment/ Decrement Operators<br>
+            increment by 1<br>
+            decrement by 1<br>
+            Comparison Operators – returns true or false<br>
+            == - is equal to<br>
+            != - is not equal to<br>
+            < - is less than<br>
+            is greater than<br>
+            <= - is less than or equal to<br>
+            = - is greater than or equal to<br>
+            Logical Operators – used to test compound condition<br>
+            && - and<br>
+            || - or<br>
+            ! - not<br>
+            Variables – stores data or values that can be changed during the execution of a program<br>
+            syntax: datatype identifier = value;<br>
+            ex. int num = 1;<br>
+            *variables must be declared before they are used<br>
+            constant – data or values stored that do not change during the execution of a program<br>
+            syntax: final datatype identifier = value;<br>
+            ex. final int num = 1;<br>
+            data type – define the kind of data that can be stored in a variable and the limits of the data<br><br>
+            <b>2 major data types in Java</b><br>
+            ● primitive type – can only have one value at a time<br>
+            ● reference type – variables must be logically grouped together for manipulation in some situations, possibly because they are going to be accessed in sequence or identifiers must point to dynamically allocated objects<br>
+            *primitive data type contains actual value of a typed variable<br>
+            *reference data type contains the address of a value rather than the value itself<br>
+            integer – whole number<br><br>
+            <b>4 integer data types</b><br>
+            ● byte (8 bits) - -128 to 127<br>
+            ● short (16 bits) - -32768 to 32767<br>
+            ● int (32 bits) - -2147483648 to 2147483647<br>
+            ● long (64 bits) - -9233372036854775808L to 9223372036854755807L<br>
+            *whether 2 integers of varying length are operated on, the smaller of the integers becomes the same length in memory as the larger<br>
+            character – a single character as a value<br>
+            – enclosed by single quotes<br>
+            *a 16 bit unsigned integer that represents a Unicode value<br>
+            Unicode – international character set<br>
+            boolean – can only have a value of true or false<br>
+            – a 1 bit logical quantity<br>
+            float – represents a number that has a decimal point in it<br>
+            – consist of 32 bit space, floating point number<br>
+            double – like float, 64 bit floating number<br>
+            String – sequence of characters enclosed in double quotes<br>
+            statement – any line of code ending with a semi colon<br>
+            declaration statement – define the type of variable<br>
+            block – sections of code beginning and ending with curly braces<br>
+            – logical unit of code that can call methods, perform expressions and display output<br>
+            *variable declared in a block is valid for that block and all its sub-block<br>
+            *variable declared in a block has no meaning in the area outside its curly braces<br>
+            escape sequence<br>
+            \t - horizontal tab<br>
+            \n - new line (line feed)<br>
+            \” - double quote<br>
+            \’ - single quote<br>
+        </p>
+    </div>
+
+    <div id = "P2ITEL201">
+        <h1 style="text-align: center;"> <b>Part 2</b></h1>
+        <p>
+            <b>Creating Java Application using with CLI output</b><br><br>
+            <b>Character Input</b><br>
+            Sample Program:<br>
+            public class A<br>
+            {<br>
+            public static void main(String[]args) throws Exception<br>
+            {<br>
+            char a;<br>
+            System.out.println("Enter a character: ");<br>
+            a=(char) System.in.read();<br>
+            System.out.println("\n The Character Entered is "+a);<br>
+            }<br>
+            }<br><br>
+            Output:<br>
+            Enter a character:<br>
+            e<br>
+            The Character Entered is e<br><br>
+            throws Exception – necessary to handle input errors<br>
+            Exception – error situation<br>
+            System.in.read( )<br>
+            – used to obtain a character input entered by the user from the keyboard<br>
+            – accepts the returned integer into a character<br>
+            (char) – converts the returned integer into a character<br>
+            if int, it will return the Unicode value<br>
+            java.lang package – automatically imported in every Java program<br><br>
+            <b>BufferedReader</b><br>
+            Sample Program:<br>
+            import java.io.BufferedReader;<br>
+            import java.io.InputStreamReader;<br>
+            public class A<br>
+            {<br>
+            public static void main (String[]args)throws Exception<br>
+            {<br>
+            BufferedReader input = new BufferedReader(new InputStreamReader(System.in));<br>
+            String a;<br>
+            System.out.println("Enter Name: ");<br>
+            a=input.readLine();<br>
+            System.out.println("Hi "+a);<br>
+            }<br>
+            }<br><br>
+            Output:<br>
+            Enter Name:<br>
+            abcd<br>
+            Hi abcd<br><br>
+            import statement – used when programmer want to access a built in java class that is contained in a group of classes called package<br>
+            java.io package – package where BufferedReader class and InputStreamReader class are included<br>
+            BufferedReader – provides the readLine( ) method which allows the program to read from standard input a line at a time<br>
+            InputStreamReader – required to read characters from the standard input<br>
+            Sample Program2:<br>
+            import java.io.;<br>
+            public class A<br>
+            {<br>
+            public static void main(String[ ]args) throws Exception<br>
+            {<br>
+            BufferedReader input = new BufferedReader(new InputStreamReader(System.in));<br>
+            String a;<br>
+            double b;<br>
+            System.out.println("Enter Number:");<br>
+            a = input.readLine( );<br>
+            b = Double.parseDouble(a);<br>
+            System.out.println("Number:"+b);<br>
+            }<br>
+            }<br><br>
+            Output:<br>
+            Enter Number:<br>
+            4<br>
+            Number: 4.0<br>
+            <br>
+            import the entire package<br>
+            parse – converts a String to its numeric equivalent<br>
+            ● Integer.parseInt( )<br>
+            ● Short.parseShort( )<br>
+            ● Long.parseLong( )<br>
+            ● Float.parseFloat( )<br>
+            ● Double.parseDouble( )<br><br>
+            <b>Scanner</b><br>
+            Sample Program:<br>
+            import java.util.*;<br>
+            public class A<br>
+            {<br>
+            public static void main(String[]args)<br>
+            {<br>
+            Scanner input = new Scanner(System.in);<br>
+            int num1,num2,ans;<br>
+            System.out.println("Addition");<br>
+            System.out.print("Enter 1st number: ");<br>
+            num1=input.nextInt();<br>
+            System.out.print("Enter 2nd number: ");<br>
+            num2=input.nextInt();<br>
+            ans = num1+num2;<br>
+            System.out.println(" Sum :"+ans);<br>
+            }<br>
+            }<br><br>
+            Output:<br>
+            Addition<br>
+            Enter 1st number: 1<br>
+            Enter 2nd number: 4<br>
+            Sum: 5<br><br>
+            java.util package – where the Scanner class is included<br>
+            Scanner – class that provides the nextInt( ) method that allows you to read and convert an input to int type<br>
+            ● nextInt( )<br>
+            ● nextShort( )<br>
+            ● nextLong( )<br>
+            ● nextDouble( )<br>
+            ● nextFloat( )<br>
+            ● nextLine( )<br>
+            *Scanner object cannot read data of type char<br><br>
+            <b>Creating Java Application using with GUI output</b><br>
+            dialog box – a GUI object resembling a window in which you can place messages you want to display<br><br>
+            Message Dialog Box<br>
+            Sample Program:<br>
+            import javax.swing.JOptionPane;<br>
+            public class A<br>
+            {<br>
+            public static void main(String[]args)<br>
+            {<br>
+            JOptionPane.showMessageDialog(null,"Hello");<br>
+            System.exit(0);<br>
+            }<br>
+            }<br>
+            JOptionPane – class that allows you to produce dialog boxes<br>
+            javax.swing package – where the JOptionPane class is included<br>
+            showMessageDialog( ) – method used to output a message dialog box<br>
+            2 arguments<br>
+            ● first argument – null, it means the dialog box will be placed in the center of the screen<br>
+            ● second argument – after the comma, the String that should be output<br>
+            System.exit(0) – must use this method with any applications that uses a GUI, it returns control to the OS<br>
+            0 is an argument that indicates the application ended successfully without error<br><br>
+            Sample Program2:<br>
+            import javax.swing.;<br>
+            public class A<br>
+            {<br>
+            public static void main(String[]args)<br>
+            {<br>
+            int day = 30;<br>
+            JOptionPane.showMessageDialog(null,day);<br>
+            JOptionPane.showMessageDialog(null,"Every bill is due in "+day+" days");<br>
+            System.exit(0);<br>
+            }<br>
+            }<br>
+            2 Dialog Boxes that can be used to accept user input<br>
+            ● input dialog box – prompts the user for text input<br>
+            ● confirm dialog box – asks the user a question, providing buttons that the user can click for: Yes, No and Cancel responses<br><br>
+            Input Dialog Box<br>
+            – asks a question and provides a text field in which the user can enter a response<br>
+            – program can assign the showInputDialog( ) method to a variable and the variable will hold the value that the user enters<br>
+            Sample Program:<br>
+            import javax.swing.JOptionPane;<br>
+            public class A<br>
+            {<br>
+            public static void main(String[]args)<br>
+            {<br>
+            String a;<br>
+            a = JOptionPane.showInputDialog(null,"Enter Name");<br>
+            JOptionPane.showMessageDialog(null,"Hello "+a);<br>
+            }<br>
+            }<br>
+            4 arguments to showInputDialog( ) method<br>
+            ● null<br>
+            ● message the user will see before entering a value<br>
+            ● title to be displayed in the title bar of the input dialog box<br>
+            ● a field describing the type of dialog box; can be one of the ff.<br>
+            ✔ ERROR_MESSAGE<br>
+            ✔ INFORMATION_MESSAGE<br>
+            ✔ QUESTION_MESSAGE<br>
+            ✔ WARNING_MESSAGE<br>
+            ✔ PLAIN_MESSAGE<br>
+            ex. String name = JOptionPane.showInputDialog(null,"What is your name?","Name",JOptionPane.QUESTION_MESSAGE);
+        </p>
+    </div>
+
+    <div id = "P3ITEL201">
+        <h1 style="text-align: center;"> <b>Part 3</b></h1>
+        <p> <b> Conditional Expression </b><br>
+            – generally execute one of several sections of code on the basis of a conditional test<br>
+            – used to make decisions in a program<br>
+            – evaluate whether a condition is true or false and will branch to different sections of code on the basis of the
+            answer<br><br>
+            <b>Sequence Structure</b><br>
+            – one step follows another unconditionally
+            decision structure<br>
+            – involves choosing between alternative courses of action based on some value within a program
+            *every computer decision results in a boolean value<br><br> 
+            <b>Java’s Selection/ Conditional Statements</b><br><br>
+            <b>if Statement</b><br>
+            syntax:<br>
+            if (condition/boolean expression)<br>
+            {<br>
+            statement1;<br>
+            :<br>
+            :<br>
+            }<br>
+            *the phrase if (boolean expression) is called the if clause<br>
+            *boolean expression is also called a boolean condition<br><br>
+            Sample Program:<br>
+            import java.util.*;<br>
+            public class A<br>
+            {<br>
+            public static void main(String[]args)<br>
+            {<br>
+            Scanner input = new Scanner(System.in);<br>
+            int grade;<br>
+            System.out.println("Enter Grade:");<br>
+            grade = input.nextInt( );<br>
+            if (grade>=75)<br>
+            {<br>
+            System.out.println("Passed");<br>
+            }<br>
+            }<br>
+            }<br><br>
+            output:<br>
+            Enter Grade:<br>
+            90<br>
+            Passed<br>
+            <br>
+            <b>if else Statement</b><br>
+            – if the condition is true, the group of statements inside the body of if will execute, but if the condition
+            evaluates to false, the group of statements in the else will execute <br>
+            <b>syntax:</b><br>
+            if (condition)<br>
+            {<br>
+            statement1;<br>
+            :<br>
+            }<br>
+            else<br>
+            {<br>
+            statement1;<br>
+            :<br>
+            }<br><br>
+            <b>Sample Program:</b><br>
+            import java.util.*;<br>
+            public class A<br>
+            {<br>
+            public static void main(String[]args)<br>
+            {<br>
+            Scanner input = new Scanner(System.in);<br>
+            int grade;<br>
+            System.out.println("Enter Grade:");<br>
+            grade = input.nextInt();<br>
+            if (grade>=75&&grade<=100)<br>
+            {<br>
+            System.out.println("Passed");<br>
+            }<br>
+            else<br>
+            {<br>
+            System.out.println("Failed");<br>
+            }<br>
+            }<br>
+            }<br><br>
+            output:<br>
+            Enter Grade:<br>
+            74<br>
+            Failed<br>
+            <br>
+            <b>Ladderized if statement</b><br>
+            – if-else-if statement is also known as if-else-if ladder. It is used when there are more than two possible
+            action based on different conditions.<br>
+            <p><b>syntax:</b><br>
+            if(condition)<br>
+            {<br>
+            statement1;<br>
+            :<br>
+            }<br>
+            else if(condition)<br>
+            {<br>
+            statement1;<br>
+            :<br>
+            }<br>
+            else<br>
+            {<br>
+            statement1;<br>
+            :<br>
+            }<br><br>
+            <b>Sample Program:</b><br>
+            import java.util.*;<br>
+            public class A<br>
+            {<br>
+            public static void main(String[]args)<br>
+            {<br>
+            Scanner input = new Scanner(System.in);<br>
+            int grade;<br>
+            System.out.println("Enter Grade:");<br>
+            grade = input.nextInt();<br>
+            if (grade>=75&&grade<=100)<br>
+            {<br>
+            System.out.println("Passed");<br>
+            }<br>
+            else if(grade<=74&&grade>=60)<br>
+            {<br>
+            System.out.println("Failed");<br>
+            }<br>
+            else<br>
+            {<br>
+            System.out.println("Out of Range");<br>
+            }<br>
+            }<br>
+            }<br><br>
+            output:
+            Enter Grade:<br>
+            101<br>
+            Out of Range<br>
+            <br>
+            <b>Nested if Statement</b><br>
+            – an if else statement inside another if else statement, which can be nested inside another if else
+            statement, and so on…<br>
+            <p><b>Situation 1:</b><br>
+            1 if<br>
+            2 if<br>
+            3 else<br>
+            *else in number3 is paired with the if in number2 since it is the nearest if with else<br><br>
+            <b>Situation 2:</b><br>
+            1 if<br>
+            2 {<br>
+            3 if<br>
+            4 }<br>
+            5 else<br>
+            *else in number 5 is paired with if in number1, the pair of braces defines the scope of the if in number1 <br>
+            Sample Program:<br>
+            import java.util.*;<br>
+            public class A<br>
+            {<br>
+            public static void main(String[]args)<br>
+            {<br>
+            Scanner input = new Scanner(System.in);<br>
+            int grade;<br>
+            System.out.println("Enter Age:");<br>
+            grade = input.nextInt();<br>
+            if (grade>=75&&grade<=100)<br>
+            {<br>
+            if (grade>=90)<br>
+            {<br>
+            System.out.println("High Passed");<br>
+            }<br>
+            else<br>
+            {<br>
+            System.out.println("Passed");<br>
+            }<br>
+            }<br>
+            else<br>
+            {<br>
+            System.out.println("Failed");<br>
+            }<br>
+            }<br>
+            }<br><br>
+            output:<br>
+            Enter Age:<br>
+            91<br>
+            High Passed<br>
+            <br>
+            <b> switch Statement</b><br>
+            – useful when you need to test a single variable against a series of exact integer or character values <br>
+            <b>4 keywords</b><br>
+            ● switch – starts the structure and is followed immediately by a test expression enclosed in parentheses<br>
+            ● case – followed by one of the possible values for the test expression and a colon<br>
+            ● break – optionally terminates a switch structure at the end of each case<br>
+            ● default – optionally is used prior to any action that should occur if the test variable does not much any case<br>
+            <b>syntax:</b><br>
+            switch(variable)<br>
+            {<br>
+            case value1 : statement1 ; break;<br>
+            :<br>
+            :<br>
+            default : statement;<br>
+            }<br><br>
+            <b>Sample Program:</b><br>
+            import java.util.*;<br>
+            public class A<br>
+            {<br>
+            public static void main(String[]args)<br>
+            {<br>
+            Scanner input = new Scanner(System.in);<br>
+            int year;<br>
+            System.out.println("Enter Year Level");<br>
+            year = input.nextInt();<br>
+            switch(year)<br>
+            {<br>
+            case 1: System.out.println("Freshman"); break;<br>
+            case 2: System.out.println("Sophomore"); break;<br>
+            case 3: System.out.println("Junior"); break;<br>
+            case 4: System.out.println("Senior"); break;<br>
+            default: System.out.println("Out of Range");<br>
+            }<br>
+            }<br>
+            }<br><br>
+            output:<br>
+            Enter Year Level<br>
+            4<br>
+            Senior</p>
+    </div>
+
+    <div id = "P4ITEL201">
+        <h1 style="text-align: center;"> <b>Part 4</b></h1>
+        <p><b>Loop</b><br>
+            - structure that allows repeated execution of a block of statements<br>
+            <p><b>3 types of Loops</b><br>
+            ● while Loop – in which the loop controlling boolean expression is the first statement in the loop<br>
+            ● do-while Loop – in which the loop controlling boolean expression is the last statement in the loop<br>
+            ● for Loop – which is usually used as a concise format in which to execute loops<br><br>
+            <b>WHILE LOOP</b><br>
+            <b>syntax:</b><br>
+            while(condition)<br>
+            {<br>
+            Statement_1;<br>
+            :<br>
+            :<br>
+            }<br>
+            <b>the while statement executes as follows:</b><br>
+            ● condition, a Boolean expression is evaluated<br>
+            ● if condition evaluates to true,<br>
+            a. statement_1 to statement_n are executed<br>
+            b. program control returns to the top of the loop<br>
+            c. the process repeats (go to step1)<br>
+            ● if condition evaluates to false,<br>
+            a. statement_1 to statement_n are skipped<br>
+            b. Program control passes to the first statement after the loop<br>
+            Sample Program:<br>
+            public class A<br>
+            {<br>
+            public static void main(String[ ] args)<br>
+            {<br>
+            int a = 0;<br>
+            while(a<10)<br>
+            {<br>
+            System.out.println(a);<br>
+            a++;<br>
+            }<br>
+            }<br>
+            }<br>
+            <br>
+            <b>DO-WHILE LOOP</b><br>
+            – always executes the body of the loop at least once before checking the terminating condition<br>
+            <b>syntax:</b><br>
+            do<br>
+            {<br>
+            statement_1;<br>
+            :<br>
+            :<br>
+            } while(condition);<br>
+            <b>execution of do-while statement proceeds as follows:</b><br>
+            ● statement_1 to statement_n are executed<br>
+            ● condition is evaluated<br>
+            ● if the condition is true, the process repeats (go back to step1)<br>
+            ● if condition is false, the loop terminates and program control passes to the first statement following the
+            loop<br><br>
+            Sample Program:<br>
+            public class A<br>
+            {<br>
+            public static void main(String[ ] args)<br>
+            {<br>
+            int a = 0;<br>
+            do<br>
+            {<br>
+            System.out.println(a);<br>
+            a++;<br>
+            } while(a<10);<br>
+            }<br>
+            }<br>
+            <br>
+            <p><b>FOR LOOP</b><br>
+            - use when you can count the number of times that a loop executes<br>
+            - compact while statements<br>
+            <b>syntax:</b><br>
+            for(initialization ; condition ; update_statement)<br>
+            {<br>
+            Statement_1;<br>
+            :<br>
+            :<br>
+            }<br>
+            <b>semantics of for statement are:</b><br>
+            ● the initialization statement executes<br>
+            ● the loop condition is evaluated<br>
+            ● if the loop condition is true then<br>
+            a. statement_1 to statement_n are executed<br>
+            b. the update statement executes<br>
+            c. go to step2<br>
+            ● if the condition is false, then the program control passes to the first statement following the for statement
+            you could note that:<br>
+            ● the initialization is performed exactly once<br>
+            ● the loop condition is always tested before the statement block executes<br>
+            ● the update statement always executes after the actions of the statement block<br>
+            ● the declared initialized various disappear after the for loop completes execution<br>
+            Sample Program:<br>
+            public class A<br>
+            {<br>
+            public static void main(String[ ] args)<br>
+            {<br>
+            for(int a = 0; a<10; a++)<br>
+            {<br>
+            System.out.println(a);<br>
+            }<br>
+            }<br>
+            }<br>
+            <br>
+            EXAMPLE PROGRAM – WHILE LOOP<br>
+            import java.util.*;<br>
+            public class A<br>
+            {<br>
+            public static void void main(String[ ] args)<br>
+            {<br>
+            Scanner input = new Scanner (System.in);<br>
+            int sum, count, size = 0, num;<br>
+            System.out.print(“How many numbers would you like to add?”);<br>
+            size = input.nextInt( );<br>
+            System.out.println(“Enter the ”+size+” numbers”);<br>
+            while(count<size)<br>
+            {<br>
+            num = input.nextInt( );<br>
+            sum = sum+num;<br>
+            count++;<br>
+            }<br>
+            System.out.println(“Sum: ”+sum);<br>
+            }<br>
+            }<br><br>
+            INFINITE LOOP<br>
+            – continues forever<br>
+            – exist if the loop’s terminating condition fails to evaluate to false<br>
+            <b>example of infinite loop</b><br>
+            int a = 0;<br>
+            while( a<10)<br>
+            {<br>
+            System.out.println(a);<br>
+            }<br>
+            <b>example of loop that will never execute</b><br>
+            int a = 0;<br>
+            while( a>10)<br>
+            {<br>
+            System.out.println(a);<br>
+            a++;<br>
+            }</p>
+    </div>
+
+    <div id = "P5ITEL201">
+        <h1 style="text-align: center;"> <b>Part 5</b></h1>
+        <p><b>2 Types of Variable</b><br>
+            ● <b>primitive</b> – stores value of primitive data type<br>
+            ● <b>reference/ pointer</b> – stores memory addresses<br><br>
+            <b>Array</b><br>
+            – structure that stores a fixed number of values or object of the same data type in memory<br>
+            – in Java is an object<br>
+            *the values or objects, which are called array elements, are of course stored in variables
+            *array variables are ordered automatically<br><br>
+            <b>One Dimensional Array</b><br>
+            – is an array that contains a simple list of elements<br>
+            – array that can picture as a column of values and whose elements you can access using a single
+            subscript<br><br>
+            <b>Syntax of One Dimensional Array Declaration:</b><br>
+            data_type [ ] array_name; or data_type array_name [ ]; - simply names the array<br>
+            array_name = new data_type[subscript]; - array creation statement<br>
+            <b>ex.</b><br>
+            int [ ]a; or int a[ ];<br>
+            a = new int [ 5];<br>
+            *keyword new tells you that an object has been created<br>
+            <b>subscript</b> – an integer contained within square brackets that indicates the size of an array
+            another way to declare with one statement<br>
+            int a [ ] = new int [5];<br>
+            *the specified size of the array does not have to be a literal value, such as 5<br>
+            *the size of an array can itself be stored in a variable<br>
+            <b>ex.</b><br>
+            int e = 10;<br>
+            int [ ] a = new int [e];<br>
+            *the variable e, does not need to be initialized as shown, the user can specify the size of the array as the program is running with code<br>
+            <b>ex.</b><br>
+            Scanner input = new Scanner(System.in);<br>
+            System.out.print(“Enter size of array: ”);<br>
+            int e = input.nextInt( );<br>
+            int a [ ] = new int[ e ];<br>
+            *when you declare and create an array, Java allocates memory addresses to store its elements<br><br>
+            <b>Array Index</b><br>
+            – to reference all the elements in an array, starting with 0 and ending with n - 1 (where <b>n</b> is the number of array elements or size of the array)<br><br>
+            <b>Array Initialization</b><br>
+            <b>ex.</b><br>
+            int a [ ] = new int [5];<br>
+            a[0] = 1;<br>
+            a[1] = 2;<br>
+            a[2] = 3;<br>
+            a[3] = 4;<br>
+            a[4] = 5;<br>
+            or<br>
+            int [ ] a = {1,2,3,4,5};<br>
+            *Java automatically places the literal values in the variables a[0],a[1],….<br><br>
+            <b>Sample Program 1</b><br>
+            public class A<br>
+            {<br>
+            public static void main(String[]args)<br>
+            {<br>
+            int [ ] ar_num = new int[5];<br>
+            ar_num[0] = 5;<br>
+            ar_num[1] = 3;<br>
+            ar_num[2] = 4;<br>
+            ar_num[3] = 1;<br>
+            ar_num[4] = 2;<br>
+            System.out.println(ar_num[0]);<br>
+            System.out.println(ar_num[1]);<br>
+            System.out.println(ar_num[2]);<br>
+            System.out.println(ar_num[3]);<br>
+            System.out.println(ar_num[4]);<br>
+            }<br>
+            }<br><br>
+            output:<br>
+            5<br>
+            3<br>
+            4<br>
+            1<br>
+            2<br>
+            <br>
+            <b> Sample Program 2</b><br>
+            public class A<br>
+            {<br>
+            public static void main(String[]args)<br>
+            {<br>
+            int [ ] ar_num = {5,3,4,1,2};<br>
+            System.out.print(ar_num[0]+" "+ar_num[1]+" "+ar_num[2]+" "+ar_num[3]+" "+ar_num[4]);<br>
+            }<br>
+            }<br>
+            output:<br>
+            5 3 4 1 2<br><br>
+            <b>Sample Program 3</b><br>
+            public class A<br>
+            {<br>
+            public static void main(String[]args)<br>
+            {<br>
+            int [ ] ar_num = new int[5];<br>
+            int sum = 0,<br>
+            double ave;<br>
+            ar_num[0] = 5;<br>
+            ar_num[1] = 3;<br>
+            ar_num[2] = 4;<br>
+            ar_num[3] = 1;<br>
+            ar_num[4] = 2;<br>
+            for(int I = 0; i<ar_num.length;i++)<br>
+            {<br>
+            System.out.println(i+1+”. number: “ +ar_num[i]);<br>
+            sum = sum+ar_num[i];<br>
+            }<br>
+            ave = sum/ar_num.length;<br>
+            System.out.println(“The average is : “+ave);<br>
+            }<br>
+            }<br><br>
+            output:<br>
+            1. number: 4<br>
+            2. number: 22<br>
+            3. number: 24<br>
+            The average is: 16.0<br>
+            <b>length</b> - is a special property or field of an array that contains the number of array elements<br>
+            <br>
+            <b>Parallel Array</b> – one with the same number of elements as another, and for which the values in corresponding elements are related<br>
+            – one dimensional arrays that are logically related<br><br>
+            <b>Sample Program</b><br>
+            public class A<br>
+            {<br>
+            public static void main(String[]args)<br>
+            {<br>
+            String name[ ] = {"Wnchl","Essa","Toto","Jenny"};<br>
+            double grade[ ] = {75.5,90.4,100.0,99.9 };<br>
+            System.out.println("Names\t\tGrades");<br>
+            for(int i = 0;i<name.length;i++)<br>
+            {<br>
+            System.out.println(name[i]+"\t\t"+grade[i]);<br>
+            }<br>
+            }<br>
+            }<br><br>
+            output:<br>
+            Names Grades<br>
+            Wnchl 75.5<br>
+            Essa 90.4<br>
+            Toto 100.0<br>
+            Jenny 99.9<br><br>
+            <b>Two Dimensional Array</b><br>
+            – often called matrix or table<br>
+            – stores elements in rows and columns<br><br>
+            ex. declaration and initialization of two dimensional array<br>
+            int a [ ] [ ] = new int [2] [5];<br>
+            a[0][0] = 1;<br>
+            a[0][1] = 2;<br>
+            a[0][2] = 3;<br>
+            a[0][3] = 4;<br>
+            a[0][4] = 5;<br>
+            a[1][0] = 6;<br>
+            a[1][1] = 7;<br>
+            a[1][2] = 8;<br>
+            a[1][3] = 9;<br>
+            a[1][4] = 0;<br>
+            *where a [row][column]<br>
+            or<br>
+            int [ ][ ] a = {{1,2,3,4,5},<br>
+            {6,7,8,9,0}};<br>
+            <br>
+            <b>Sample Program</b><br>
+            public class A<br>
+            {<br>
+            public static void main(String[]args)<br>
+            {<br>
+            int [ ][ ] ar_num = {{1,2,3,4,5},<br>
+            {6,7,8,9,0}};<br>
+            System.out.println(ar_num[0][0]+" "+ar_num[0][1]+" "+ar_num[0][2]+" "+ar_num[0][3]+" "+ar_num[0][4]);<br>
+            System.out.println(ar_num[1][0]+" "+ar_num[1][1]+" "+ar_num[1][2]+" "+ar_num[1][3]+" "+ar_num[1][4]);<br>
+            } <br>
+            } <br><br>
+            output:<br>
+            1 2 3 4 5<br>
+            6 7 8 9 0<br><br>
+            <b>Ragged Array</b><br>
+            – a two dimensional array where rows do not all contain the same number of elements (columns)<br>
+            <b>Sample Program</b><br>
+            public class A<br>
+            {<br>
+            public static void main(String[]args)<br>
+            {<br>
+            int[ ][ ]a = {{1},<br>
+            {1,2},<br>
+            {1,2,3}};<br>
+            System.out.println(a[0][0]);<br>
+            System.out.println(a[1][0]+" "+a[1][1]);<br>
+            System.out.println(a[2][0]+" "+a[2][1]+" "+a[2][2]);<br>
+            }<br>
+            }<br><br>
+            output:<br>
+            1<br>
+            1 2<br>
+            1 2 3<br><br>
+            <b>Array Methods</b><br><br>
+            <b>toString( )</b> – used to display the contents of array<br>
+            <b>Sample Program</b><br>
+            import java.util.*;<br>
+            public class A<br>
+            {<br>
+            public static void main(String[]args)<br>
+            {<br>
+            int a[ ] = {1,2,3,4,5};<br>
+            String b = Arrays.toString(a);<br>
+            System.out.println(b);<br>
+            }<br>
+            }<br><br>
+            output:<br>
+            [1, 2, 3, 4, 5]<br><br>
+            <b>equals( )</b> – used to test whether 2 arrays are really identical<br>
+            <b>Sample Program</b><br>
+            import java.util.*;<br>
+            public class A<br>
+            {<br>
+            public static void main(String[]args)<br>
+            {<br>
+            int a[ ] = {1,2,3,4,5};<br>
+            int b[ ] = {2,3,4,5,6};<br>
+            boolean c;<br>
+            c = a.equals(a);<br>
+            System.out.println(c);<br>
+            }<br>
+            }<br><br>
+            output:<br>
+            true<br><br>
+            <b>arraycopy( )</b> – used to copy the contents of 1 array to another<br>
+            <b>Sample Program</b><br>
+            import java.util.*;<br>
+            public class A<br>
+            {<br>
+            public static void main(String[]args)<br>
+            {<br>
+            int a[ ] = {1,2,3,4,5};<br>
+            int c[ ] = new int[5];<br>
+            System.arraycopy(a,0,c,0,5);<br>
+            String d = Arrays.toString(c);<br>
+            System.out.println(d);<br>
+            }<br>
+            }<br><br>
+            output:<br>
+            [1, 2, 3, 4, 5]<br><br>
+            <b>sort( )</b> – sort the elements of an array in ascending order<br>
+            <b>Sample Program</b><br>
+            import java.util.*;<br>
+            public class A<br>
+            {<br>
+            public static void main(String[]args)<br>
+            {<br>
+            int a[ ] = {2,5,1,3,4};<br>
+            Arrays.sort(a);<br>
+            String d = Arrays.toString(a);<br>
+            System.out.println(d);<br>
+            }<br>
+            }<br><br>
+            output:<br>
+            [1, 2, 3, 4, 5]<br><br>
+            <b>fill( )</b> – used to fill an array with the value want<br>
+            <b>Sample Program</b><br>
+            import java.util.*;<br>
+            public class A<br>
+            {<br>
+            public static void main(String[]args)<br>
+            {<br>
+            int a[ ] = {2,5,1,3,4};<br>
+            Arrays.fill(a,4);<br>
+            String d = Arrays.toString(a);<br>
+            System.out.println(d);<br>
+            }<br>
+            }<br><br>
+            output:<br>
+            [4, 4, 4, 4, 4]<br>
+    </div>
+
+    <div id = "P6ITEL201">
+        <h1 style="text-align: center;"> <b>Part 6</b></h1>
+        <p>
+            <b>Character</b><br>
+            – a class whose instances can hold a single character value<br>
+            – this class also defines methods that can manipulate or inspect single character data<br>
+            String<br>
+            – a class for working with fixed – string data – that is, unchanging data composed of multiple characters<br>
+            StringBuffer<br>
+            – a class for storing and manipulating changeable data composed of multiple characters<br><br>
+            <b>CHARACTER CLASS</b><br>
+            – contains standard methods for testing the values of characters<br><br>
+            <b>CHARACTER methods</b><br>
+            ● isUpperCase( ) – test if character is uppercase<br>
+            ● toUpperCase( ) – returns the uppercase equivalent of the character<br>
+            ● isLowerCase( ) – test if character is lowercase<br>
+            ● toLowerCase( ) – returns the lowercase equivalent of the character<br>
+            ● isDigit( ) – returns true if the character is a digit (0-9) and false otherwise<br>
+            ● isLetter( ) – returns true if the character is a letter and false otherwise<br>
+            ● isLetterOrDigit( ) – returns true if the character is a letter or digit and false otherwise<br>
+            ● isWhitespace( ) – returns true if the argument is whitespace and false otherwise<br>
+            * “is” method, such as isUpperCase( ) returns boolean value<br>
+            * “to” method, such as toUpperCase( ) returns a character that has been converted to the stated form<br><br>
+            <b>Sample program using CHARACTER methods</b><br>
+            public class A<br>
+            {<br>
+            public static void main(String[ ] args)<br>
+            {<br>
+            char a = ‘E’;<br>
+            System.out.println(“The character is ”+e);<br>
+            if(Character.isUpperCase(a))<br>
+            System.out.println(e+” is Uppercase”);<br>
+            else<br>
+            System.out.println(e+” is not Uppercase”);<br>
+            if(Character.isLowerCase(a))<br>
+            System.out.println(e+” is Lowercase”);<br>
+            else<br>
+            System.out.println(e+” is not Lowercase”);<br>
+            if(Character.isDigit(a))<br>
+            System.out.println(e+” is Digit”);<br>
+            else<br>
+            System.out.println(e+” is not Digit”);<br>
+            if(Character.isLetter(a))<br>
+            System.out.println(e+” is Letter”);<br>
+            else<br>
+            System.out.println(e+” is not Letter”);<br>
+            if(Character.isLetterOrDigit(a))<br>
+            System.out.println(e+” is Letter or Digit”);<br>
+            else<br>
+            System.out.println(e+” is not Letter or Digit”);<br>
+            if(Character.isWhitespace(a))<br>
+            System.out.println(e+” is Whitespace”);<br>
+            else<br>
+            System.out.println(e+” is not Whitespace”);<br>
+            a = Character.toLowerCase(a);<br>
+            System.out.println(“After toLowerCase( ), variable a is: “+a);<br>
+            a = Character.toUpperCase(a);<br>
+            System.out.println(“After toUpperCase( ), variable a is: “+a);<br>
+            }<br>
+            }<br><br>
+            <b>output:</b><br>
+            The Character is E<br>
+            E is Uppercase<br>
+            E is not Lowercase<br>
+            E is not Digit<br>
+            E is Letter<br>
+            E is Letter or Digit<br>
+            E is not Whitespace<br>
+            After toLowerCase( ), variable a is E<br>
+            After toUpperCase( ), variable a is e<br><br>
+            <b>STRING</b><br>
+            String literal/ Literal String – an unnamed object or anonymous object of the String class<br>
+            String variable – a named object of the String class<br>
+            syntax to declare and initialize String variable<br>
+            String a = “Hello”;<br>
+            or<br>
+            String a = new String(“Hello”);<br>
+            *if you declare two String objects and initialized both to the same value, the value is stored only once in<br>
+            memory and the two object references hold the same memory address, because the String is stored just once<br>
+            in the memory<br>
+            *in Java, String is a class and each created String is a class object.<br>
+            *A String variable name is reference, that is, a String variable name refers to a location in memory, rather than<br>
+            a particular value<br>
+            Primitive Data Type – holds particular value<br>
+            Reference Data Type – holds location in memory<br><br>
+            <b>Garbage Collector</b><br>
+            – part of Java system that discards the String that is still in memory and no String object longer holds its<br>
+            address<br>
+            *String never actually changed, instead new Strings are created and String variables hold the new address<br>
+            *String and other objects that can’t be changed are known as immutable<br><br>
+            <b>STRING methods</b><br><br>
+            <b>equals( )</b><br>
+            – String class method evaluates the contents of 2 String objects to determine if they are equivalent<br>
+            – returns true if the objects have identical contents<br>
+            *when you compare Strings with == operator, you are comparing their memory addresses not their values<br><br>
+            <b>Sample Program</b><br>
+            import javax.swing.*;<br>
+            public class A<br>
+            {<br>
+            public static void main (String[]args)<br>
+            {<br>
+            String a = JOptionPane.showInputDialog(null,"Enter Name");<br>
+            String b = "aaaaa";<br>
+            if(a.equals(b))<br>
+            {<br>
+            JOptionPane.showMessageDialog(null,a+" equals "+b);<br>
+            }<br>
+            else<br>
+            {<br>
+            JOptionPane.showMessageDialog(null,a+" does not equal "+b);<br>
+            }<br>
+            }<br>
+            }<br><br>
+            <b>equalsIgnoreCase( )</b><br>
+            – similar to the equals( )<br>
+            – it ignores case when determining if two String are equivalent<br><br>
+            <b>Sample Program</b><br>
+            import javax.swing.*;<br>
+            public class A<br>
+            {<br>
+            public static void main (String[]args)<br>
+            {<br>
+            String a = JOptionPane.showInputDialog(null,"Enter Name");<br>
+            String b = "AAAaa";<br>
+            if(a.equalsIgnoreCase(b))<br>
+            {<br>
+            JOptionPane.showMessageDialog(null,a+" equals "+b);<br>
+            }<br>
+            else<br>
+            {<br>
+            JOptionPane.showMessageDialog(null,a+" does not equal "+b);<br>
+            }<br>
+            }<br>
+            }<br><br>
+            <b>length( )</b><br>
+            – returns the length of a String<br><br>
+            <b>Sample Program</b><br>
+            public class A<br>
+            {<br>
+            public static void main(String[]args)<br>
+            {<br>
+            String str = "abcdefghij";<br>
+            int len = str.length();<br>
+            System.out.println("String: "+str);<br>
+            System.out.println("Length of String: "+len);<br>
+            }<br>
+            }<br><br>
+            <b>indexOf( )</b><br>
+            – determines whether a specific character occurs within a String<br>
+            – if it does, the method returns the position of the character, the return value is -1 if the<br>
+            character does not exist in the String<br><br>
+            <b>Sample Program</b><br>
+            public class A<br>
+            {<br>
+            public static void main(String[]args)<br>
+            {<br>
+            String str = "abcde";<br>
+            int position;<br>
+            char let = 'e';<br>
+            position = str.indexOf(let);<br>
+            System.out.println("String: "+str);<br>
+            System.out.println("Index of "+let+": "+position);<br>
+            }<br>
+            }<br><br>
+            <b>charAt( )</b><br>
+            – requires an integer argument that indicates the position of the character that the method<br>
+            returns<br><br>
+            <b>Sample Program</b><br>
+            public class A<br>
+            {<br>
+            public static void main(String[]args)<br>
+            {<br>
+            String str = "abcde";<br>
+            char let;<br>
+            int pos = 2;<br>
+            let = str.charAt(10);<br>
+            System.out.println("String: "+str);<br>
+            System.out.println("Character at position "+pos+": "+let);<br>
+            }<br>
+            }<br><br>
+            <b>endsWith( ) / startsWith( )</b><br>
+            – each take a String argument and return true or false if a String object does or does not<br>
+            end or start with the specified argument<br><br>
+            <b>Sample Program</b><br>
+            public class A<br>
+            {<br>
+            public static void main(String[]args)<br>
+            {<br>
+            String str = "abcdefghij";<br>
+            String start = "abcdefghij", end = "hij";<br>
+            if(str.startsWith(start))<br>
+            {<br>
+            System.out.println("String: "+str);<br>
+            System.out.println("startsWith "+start);<br>
+            }<br>
+            else<br>
+            {<br>
+            System.out.println("String: "+str);<br>
+            System.out.println("Do not startsWith "+start);<br>
+            }<br>
+            if(str.endsWith(end))<br>
+            {<br>
+            System.out.println("String: "+str);<br>
+            System.out.println("endsWith "+end);<br>
+            }<br>
+            else<br>
+            {<br>
+            System.out.println("String: "+str);<br>
+            System.out.println("Do not endsWith "+end);<br>
+            }<br>
+            }<br>
+            }<br><br>
+            <b>replace( )</b><br>
+            – allows you to replace all occurrences of some character within a String<br><br>
+            <b>Sample Program</b><br>
+            public class A<br>
+            {<br>
+            public static void main(String[]args)<br>
+            {<br>
+            String str = "abcde",str2;<br>
+            System.out.println("String: "+str);<br>
+            str2 = str.replace('e','E');<br>
+            System.out.println("replace(): "+str2);<br>
+            }<br>
+            }<br><br>
+            <b>toString( )</b><br>
+            – converts any data type to String<br><br>
+            <b>Sample Program</b><br>
+            public class A<br>
+            {<br>
+            public static void main(String[]args)<br>
+            {<br>
+            String str;<br>
+            int a = 4;<br>
+            str = Integer.toString(a);<br>
+            System.out.println("Number: "+a);<br>
+            System.out.println("String: "+str);<br>
+            }<br>
+            }<br><br>
+            <b>substring( )</b><br>
+            – extract part of the Strings<br><br>
+            <b>Sample Program</b><br>
+            public class A<br>
+            {<br>
+            public static void main(String[]args)<br>
+            {<br>
+            String str = "abcdefghij",sub;<br>
+            sub = str.substring(3,7);<br>
+            System.out.println("String: "+str);<br>
+            System.out.println("substring: "+sub);<br>
+            }<br>
+            }<br><br>
+            <b>STRINGBUFFER CLASS</b><br>
+            – an alternative to String class<br>
+            – use when you know a String will be modified<br>
+            – part of java.lang package<br>
+            syntax to declare and initialize a StringBuffer object<br>
+            StringBuffer a = new StringBuffer(“Hello”);<br>
+            *when you create a String, you have the option of omitting the keyword new, but when you initialize a<br>
+            StringBuffer object you must use the keyword new, the constructor name and an initializing value between the<br>
+            constructor’s parentheses<br>
+            buffer – memory block in a StringBuffer object which might or might not contain a String<br>
+            *if it does not contain a String, the String might not occupy the entire buffer, in other words the length of a<br>
+            String can be different from the length of the buffer<br>
+            capacity - the actual length of the buffer of the StringBuffer object<br><br>
+            <b>STRINGBUFFER methods</b><br><br>
+            <b>capacity( )</b><br>
+            – used to find the capacity of a StringBuffer<br>
+            *when you create a StringBuffer object, its capacity is the length of the StringBuffer contains plus 16<br><br>
+            <b>Sample Program</b><br>
+            public class A<br>
+            {<br>
+            public static void main(String[]args)<br>
+            {<br>
+            StringBuffer strb = new StringBuffer("abcde");<br>
+            int cap = strb.capacity();<br>
+            System.out.print(cap);<br>
+            }<br>
+            }<br><br>
+            <b>append( )</b><br>
+            – lets you add characters to the end of a StringBuffer object<br><br>
+            <b>Sample Program</b><br>
+            public class A<br>
+            {<br>
+            public static void main(String[]args)<br>
+            {<br>
+            StringBuffer strb = new StringBuffer("Happy");<br>
+            strb.append("Birthday");<br>
+            System.out.print(strb);<br>
+            }<br>
+            }<br><br>
+            <b>insert( )</b><br>
+            – lets you add characters at a specific location<br><br>
+            <b>Sample Program</b><br>
+            public class A<br>
+            {<br>
+            public static void main(String[]args)<br>
+            {<br>
+            StringBuffer strb = new StringBuffer("HappyBirthday");<br>
+            strb.insert(5,"4th");<br>
+            System.out.print(strb);<br>
+            }<br>
+            }<br><br>
+            <b>setCharAt( )</b><br>
+            – which allows you to change a character at a specified position within a StringBuffer<br>
+            object<br><br>
+            <b>Sample Program</b><br>
+            public class A<br>
+            {<br>
+            public static void main(String[]args)<br>
+            {<br>
+            StringBuffer strb = new StringBuffer("HappyBirthday");<br>
+            strb.setCharAt(5,'b');<br>
+            System.out.print(strb);<br>
+            }<br>
+            }<br><br>
+            <b>charAt( )</b><br>
+            – use to extract a character from a StringBuffer object<br><br>
+            <b>Sample Program</b><br>
+            public class A<br>
+            {<br>
+            public static void main(String[]args)<br>
+            {<br>
+            StringBuffer strb = new StringBuffer("HappyBirthday");<br>
+            char let = strb.charAt(4);<br>
+            System.out.print(let);<br>
+            }<br>
+            }<br>
+        </p>
+    </div>
+
+    <div id = "P7ITEL201">
+        <h1 style="text-align: center;"> <b>Part 7</b></h1>
+        <p>
+            <b>METHOD</b><br>
+            – a program module that contains a series of statements that carry out a task<br>
+            – similar to procedures, functions or subroutines of other programming languages<br>
+            <br>
+            ● To execute a method, you invoke or call it from another method<br>
+            ● The calling method makes a method call, which invokes the called method<br>
+            ● A class can contain an unlimited number of methods and each method can be called an unlimited number of times<br>
+            ● Within a class the simplest methods you can invoke don’t require any arguments or parameters to be sent to them nor return a value<br>
+            <br>
+            <b>Parts of a METHOD</b><br>
+            ● A declaration (header)<br>
+            ● An opening curly brace<br>
+            ● A body<br>
+            ● A closing curly brace<br>
+            <br>
+            <b>METHOD Declaration</b><br>
+            – the first line or header of a method<br>
+            ● optional access modifiers<br>
+            ❖ public<br>
+            ❖ protected<br>
+            ❖ private<br>
+            ❖ default<br>
+            ● return type for the method<br>
+            ● method name<br>
+            ● (<br>
+            ● optional list of method arguments (separate multiple arguments with comma)<br>
+            ● )<br>
+            <br>
+            public class SimpleMethod<br>
+            {<br>
+            //method( )<br>
+            public static void main( String[ ]args)<br>
+            {<br>
+            System.out.println(“Hello World”);<br>
+            }<br>
+            //method( )<br>
+            }<br>
+            <br>
+            ● main( ) method executes first in an application, no matter where you physically place it w/n its class<br>
+            <br>
+            <b>Example Program – Creating sample method with no argument and returns nothing</b><br>
+            public class NameAndAddress<br>
+            {<br>
+            public static void nameAndAddress()<br>
+            {<br>
+            System.out.println("Name: Essa");<br>
+            System.out.println("Address: Alaminos, Laguna");<br>
+            }<br>
+            }<br>
+            <br>
+            <b>Example Program – Application using the nameAndAddress( )</b><br>
+            public class NameAndAddressApp<br>
+            {<br>
+            public static void main(String[]args)<br>
+            {<br>
+            NameAndAddress.nameAndAddress();<br>
+            }<br>
+            }<br>
+            <br>
+            <b>static</b> – no objects needed to be created to use the method<br>
+            <b>void</b> – method returns nothing, also a return type<br>
+            <br>
+            <b>Types of METHOD based on needing an OBJECT to use</b><br>
+            ● static method – method that can be used w/o an object<br>
+            ● instance method – method that can only be used w/ object<br>
+            <br>
+            <b>Reasons to create a separate METHOD</b><br>
+            ● main( ) method remains short and easy to follow<br>
+            ● reusable<br>
+            <br>
+            <b>Method with SINGLE argument</b><br>
+            ● must include w/n the method declaration parentheses<br>
+            ❖ argument type<br>
+            ❖ local name for the argument (local variable)<br>
+            local variable – known only w/n the boundaries of the method<br>
+            <br>
+            <b>Two types of PARAMETER/ ARGUMENT</b><br>
+            ● actual parameter – arguments in method call<br>
+            ● formal parameter – variables in method declaration that accept the values from the actual parameters<br>
+            <br>
+            <b>Example Program – Creating sample method with one argument and returns nothing</b><br>
+            public class NumberConverterMethod<br>
+            {<br>
+            public static void main(String[]args)<br>
+            {<br>
+            int a = 1;<br>
+            numconvert(a);<br>
+            }<br>
+            public static void numconvert(int num)<br>
+            {<br>
+            if(num==1)<br>
+            {<br>
+            System.out.print("One");<br>
+            }<br>
+            else if(num==2)<br>
+            {<br>
+            System.out.print("Two");<br>
+            }<br>
+            else<br>
+            {<br>
+            System.out.print("Out of Range");<br>
+            }<br>
+            }<br>
+            }<br>
+            <br>
+            <b>METHOD with MULTIPLE arguments</b><br>
+            ● list the data type for each argument separately,<br>
+            even if the arguments have the same data type<br>
+            <br>
+            <b>Example Program – Creating sample method with multiple arguments and returns nothing</b><br>
+            public class AddMethod<br>
+            {<br>
+            public static void add2(int num1,int num2)<br>
+            {<br>
+            int sum = num1 + num2;<br>
+            System.out.println("Sum: "+sum);<br>
+            }<br>
+            public static void main(String[]args)<br>
+            {<br>
+            int a = 1, b = 2;<br>
+            add2(a,b);<br>
+            }<br>
+            }<br>
+            <br>
+            <b>METHOD that RETURN values</b><br>
+            method type – method’s return data type<br>
+            return statement – causes a value to be sent from a called method back to the calling method<br>
+            ● the return type for a method can be any type used in Java<br>
+            ● a method can also return nothing in which case the return type is void<br>
+            ```html
+            <b>Example Program – Creating sample method with multiple arguments and returns a value</b><br>
+            public class AddReturnMethod<br>
+            {<br>
+            public static int add2(int num1,int num2)<br>
+            {<br>
+            int sum = num1 + num2;<br>
+            return sum;<br>
+            }<br>
+            public static void main(String[]args)<br>
+            {<br>
+            int a = 1, b = 2;<br>
+            int sum=add2(a,b);<br>
+            System.out.println(sum);<br>
+            }<br>
+            }<br>
+        </p>
+    </div>
+
+    <div id = "P8ITEL201">
+        <h1 style="text-align: center;"> <b>Part 8</b></h1>
+        <p>
+            <b>Learning about Class Concept</b><br>
+            ● In Object Oriented manner, everything is an object and every object is a member of a class<br>
+            ● Every object is a member of a more general class (ex. an oak desk is a member of the class that includes all desks)<br>
+            ● An object is an instantiation of a class or one tangible example of a class (ex. goldfish and shark each constitute at least one attribute of Fish class)<br>
+            ● Data components of a class are often referred to as the instance variable of that class. Also, class object attributes are often called fields to help distinguish them from other variables<br>
+            ● An application or class that instantiates objects of another class is called class client or class user<br>
+            ● Java application can contain only one method with the signature public static void main (String []args). If you write a class that imports another class, and both classes have a main( )method, your application will not compile or run<br>
+            <br>
+            <b>Parts of a Class</b><br>
+            ● Header<br>
+            ● {<br>
+            ● Body<br>
+            ● }<br>
+            <br>
+            <b>Parts of a Class Header</b><br>
+            ● Access modifiers<br>
+            ● the Keyword “class”<br>
+            ● any legal Identifier for the name of your class<br>
+            Ex. program<br>
+            public class SampleClass<br>
+            {<br>
+            //datafields<br>
+            //methods<br>
+            }<br>
+            <br>
+            <b>Data fields/ fields/ instance variables</b><br>
+            – variable you declare within a class, but outside of any method<br>
+            – field modifier (access modifier) when you declare it (optional)<br>
+            ● when you create or instantiate objects from a class, each will have its own copy of each non static data field you declare<br>
+            Ex. program with one field<br>
+            public class Employee1<br>
+            {<br>
+            private int empNum;<br>
+            }<br>
+            <br>
+            <b>MUTATOR METHOD</b> – methods that set values<br>
+            <b>ACCESSOR METHOD</b> – methods that retrieve values<br>
+            Ex. program with one field and instance method that retrieve a value (accessor method)<br>
+            public class Employee2<br>
+            {<br>
+            private int empNum = 100;<br>
+            public int getEmpNum()<br>
+            {<br>
+            return empNum;<br>
+            }<br>
+            }<br>
+            Ex. program with one field and instance method that sets a value (mutator method)<br>
+            public class Employee2<br>
+            {<br>
+            private int empNum;<br>
+            public void setEmpNum(int empnum)<br>
+            {<br>
+            empNum = a;<br>
+            }<br>
+            }<br>
+            <br>
+            Ex. program with one field and two methods (1 accessor and 1 mutator)<br>
+            public class Employee2<br>
+            {<br>
+            private int empNum = 100;<br>
+            public int getEmpNum()<br>
+            {<br>
+            return empNum;<br>
+            }<br>
+            public void setEmpNum(int a)<br>
+            {<br>
+            empNum = a;<br>
+            }<br>
+            }<br><br>
+            <b>OBJECT CREATION or CLASS INSTANTIATION</b><br>
+            Employee aEmployee;<br>
+            aEmployee = new Employee( );<br>
+            or<br>
+            Employee aEmployee = new Employee( );<br>
+            *Employee( ) method is a constructor method<br>
+            <br>
+            <b>Constructor method</b><br>
+            – a method that creates and initializes class objects<br>
+            ● You can write your own constructor methods<br>
+            ● But when you don’t write one, Java will create one for you and the name of the constructor method is always the same as the name of the class whose objects it construct<br>
+            <br>
+            <b>Application (class w/ main( ) method)</b><br>
+            Creating instance (object) of Employee2 class and using the Employee2 class instance methods<br>
+            public class Employee2App<br>
+            {<br>
+            public static void main(String[]args)<br>
+            {<br>
+            Employee2 clerk = new Employee2();<br>
+            Employee2 driver = new Employee2();<br>
+            clerk.setEmpNum(5);<br>
+            driver.setEmpNum(22);<br>
+            int a = clerk.getEmpNum();<br>
+            int b = driver.getEmpNum();<br>
+            System.out.println("The clerk's number is: "+a);<br>
+            System.out.println("The driver's number is: "+b);<br>
+            }<br>
+            }<br>
+        </p>
+    </div>
+    <script src="Navigation.js"></script>
+</div>
+</body>
+</body>
+</html>
