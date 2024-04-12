@@ -164,15 +164,32 @@ ul.active{
     border-radius: 20px; /* Make the search bar rounded */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a shadow for a raised effect */
 }
-.search-box input{
+/* Adjusted styles for smaller screens */
+@media only screen and (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide navigation links */
+    }
+    .dropdown {
+        display: block; /* Show dropdown menu on smaller screens */
+    }
+    .search-box input[type="text"] {
+        width: 50px; /* Adjust search input width */
+    }
+    .search-box button {
+        padding: 4px; /* Adjust padding for search button */
+    }
+}
+
+/* Ensure that the search box styles target the correct class */
+.search-box input {
     border: 0;
     background-color: transparent;
     font-size: 16px;
     width: 0;
     transition: 0.8s;
 }
-.search-box:hover input{
-width: 150px;
+.search-box:hover input {
+    width: 150px;
 }
 .search-box button {
     padding: 8px; /* Adjusted padding to fit inside the circle */
@@ -183,6 +200,7 @@ width: 150px;
     cursor: pointer;
     font-size: 16px; /* Increased font size to make the icon visible */
 }
+
 
 /* Main Content styles */
 .main-content {
@@ -252,11 +270,13 @@ footer {
     .dropdown {
         display: block; /* Show dropdown menu on smaller screens */
     }
-    .search-bar input[type="text"] {
+    .search-box input[type="text"] {
         width: 50px; /* Adjust search input width */
     }
-    .search-bar button {
+    .search-box button {
         padding: 4px; /* Adjust padding for search button */
     }
 }
+
+
 
